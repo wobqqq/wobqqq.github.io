@@ -6,3 +6,4 @@ Each folder is a copy of the `website/` folder of the game's own (private) repos
 | Folder | Game |
 |---|---|
 | `bag-of-bags/` | https://wobqqq.github.io/bag-of-bags/ |
+| `city-zero/` | https://wobqqq.github.io/city-zero/ |
