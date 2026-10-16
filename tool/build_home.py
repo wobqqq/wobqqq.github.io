@@ -13,9 +13,15 @@ STUDIO = 'https://wobqqq.github.io/cat-and-duck-studio/'
 GAMES = ['bag-of-bags', 'zakatki', 'kto-menya-zaper', 'dacha', 'skanvordy']
 
 MONO = '''<svg class="mono" viewBox="0 0 64 64" aria-hidden="true">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6d5dfc"/><stop offset="1" stop-color="#22b8cf"/></linearGradient></defs>
-  <rect width="64" height="64" rx="18" fill="url(#g)"/>
-  <path d="M14 22 l7 22 l7 -16 l4 9 l4 -9 l7 16 l7 -22" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="wg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff4f7b"/><stop offset=".55" stop-color="#ff7a45"/><stop offset="1" stop-color="#ffb23e"/></linearGradient>
+    <radialGradient id="wh" cx=".25" cy=".15" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="19" fill="url(#wg)"/>
+  <rect width="64" height="64" rx="19" fill="url(#wh)"/>
+  <path d="M13.5 21.5 Q15 20 16.6 21.3 L22.6 39.6 L28.7 25.4 Q30 23 32 23 Q34 23 35.3 25.4 L41.4 39.6 L47.4 21.3 Q49 20 50.5 21.5" fill="none" stroke="#2b1430" stroke-opacity=".18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 1.6)"/>
+  <path d="M13.5 21.5 Q15 20 16.6 21.3 L22.6 39.6 L28.7 25.4 Q30 23 32 23 Q34 23 35.3 25.4 L41.4 39.6 L47.4 21.3 Q49 20 50.5 21.5" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M53.5 7.5 l1.2 2.9 2.9 1.2 -2.9 1.2 -1.2 2.9 -1.2 -2.9 -2.9 -1.2 2.9 -1.2 z" fill="#fff" opacity=".9"/>
 </svg>'''
 
 DUCK = '''<svg class="studio-logo" viewBox="0 0 120 120" aria-hidden="true">
@@ -76,7 +82,7 @@ T = {
         'title': 'Sergey Zakharevich (wobqqq) — backend developer and Cat & Duck Studio',
         'desc': 'Senior backend developer and software architect: open-source security tools for Laravel Nova and October CMS, and cozy mobile games by Cat & Duck Studio.',
         'hi': 'Hi, I’m Sergey', 'role': 'Senior Backend Developer & Software Architect',
-        'lead': 'I build secure, high-load backends with PHP, Laravel and Node.js, integrate AI — and in my spare time make cozy mobile games.',
+        'lead': 'I build secure, high-load backends with PHP, Laravel and Node.js, integrate AI — and in my spare time make cozy mobile games and apps.',
         'where': 'Minsk, Belarus',
         'studio_kicker': 'My game studio', 'studio_text': 'Cozy mobile games: puzzles, words and a country garden. Offline, no sign-up.',
         'studio_btn': 'Visit the studio', 'games': 'games on Android',
@@ -87,7 +93,7 @@ T = {
         'title': 'Сергей Захаревич (wobqqq) — backend-разработчик и Cat & Duck Studio',
         'desc': 'Senior backend-разработчик и архитектор: открытые инструменты безопасности для Laravel Nova и October CMS и уютные мобильные игры Cat & Duck Studio.',
         'hi': 'Привет, я Сергей', 'role': 'Senior Backend Developer и архитектор ПО',
-        'lead': 'Делаю надёжные и нагруженные бэкенды на PHP, Laravel и Node.js, встраиваю ИИ — а в свободное время делаю уютные мобильные игры.',
+        'lead': 'Делаю надёжные и нагруженные бэкенды на PHP, Laravel и Node.js, встраиваю ИИ — а в свободное время делаю уютные мобильные игры и приложения.',
         'where': 'Минск, Беларусь',
         'studio_kicker': 'Моя игровая студия', 'studio_text': 'Уютные мобильные игры: головоломки, слова и дача. Без интернета и регистрации.',
         'studio_btn': 'Открыть студию', 'games': 'игр на Android',
@@ -97,10 +103,10 @@ T = {
 }
 
 CSS = '''
-:root { --bg: #f7f7fb; --card: #ffffff; --ink: #1c1b29; --soft: #5d5b72; --line: #e6e5ef; --chip: #efeefa;
-  --a1: #6d5dfc; --a2: #22b8cf; --shadow: 0 1px 0 var(--line), 0 12px 30px rgba(40, 30, 120, .07); }
+:root { --bg: #fff8f5; --card: #ffffff; --ink: #2a1a22; --soft: #6e5a63; --line: #f1e3e1; --chip: #fdeee9;
+  --a1: #f0436e; --a2: #ff8a3d; --shadow: 0 1px 0 var(--line), 0 12px 30px rgba(120, 40, 50, .07); }
 @media (prefers-color-scheme: dark) {
-  :root { --bg: #111019; --card: #1b1a27; --ink: #f1f0fa; --soft: #a9a7c0; --line: #2a2939; --chip: #252436;
+  :root { --bg: #17111a; --card: #221a24; --ink: #f8eef0; --soft: #bba8b0; --line: #34283a; --chip: #2d2230;
     --shadow: 0 1px 0 #0a0910, 0 12px 30px rgba(0, 0, 0, .35); }
 }
 * { box-sizing: border-box; }
@@ -118,7 +124,9 @@ a { color: var(--a1); }
 .hero h1 { font-size: clamp(34px, 6vw, 60px); line-height: 1.05; margin: 0 0 14px; letter-spacing: -.03em; font-weight: 800;
   background: linear-gradient(90deg, var(--a1), var(--a2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero p.lead { max-width: 620px; margin: 0 0 22px; color: var(--soft); font-size: 18px; }
-.hero .mono { width: clamp(110px, 18vw, 180px); height: auto; filter: drop-shadow(0 16px 26px rgba(109, 93, 252, .35)); transform: rotate(-6deg); }
+.hero .mono { width: clamp(110px, 18vw, 180px); height: auto; filter: drop-shadow(0 18px 28px rgba(240, 67, 110, .38)); transform: rotate(-6deg); animation: float 7s ease-in-out infinite; }
+@keyframes float { 50% { transform: rotate(-3deg) translateY(-8px); } }
+@media (prefers-reduced-motion: reduce) { .hero .mono { animation: none; } }
 .links { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 14px; background: var(--card); color: var(--ink); text-decoration: none; font-weight: 700; font-size: 15px; box-shadow: var(--shadow); }
 .btn.primary { background: linear-gradient(90deg, var(--a1), var(--a2)); color: #fff; }
@@ -196,7 +204,7 @@ def page(lang):
 <link rel="icon" type="image/png" sizes="16x16" href="{up}favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="{up}apple-touch-icon.png">
 <link rel="manifest" href="{up}site.webmanifest">
-<meta name="theme-color" content="#6d5dfc">
+<meta name="theme-color" content="#f0436e">
 <meta property="og:title" content="Sergey Zakharevich (wobqqq)">
 <meta property="og:description" content="{t['desc']}">
 <meta property="og:image" content="https://wobqqq.github.io/icon-512.png">
@@ -243,7 +251,7 @@ def page(lang):
     MONO.replace('class="mono" ', 'xmlns="http://www.w3.org/2000/svg" width="512" height="512" ').replace(' aria-hidden="true"', ''))
 (SITE / 'site.webmanifest').write_text(json.dumps({
     'name': 'wobqqq', 'short_name': 'wobqqq', 'start_url': './', 'scope': './', 'display': 'browser',
-    'background_color': '#f7f7fb', 'theme_color': '#6d5dfc',
+    'background_color': '#fff8f5', 'theme_color': '#f0436e',
     'icons': [{'src': 'icon-192.png', 'sizes': '192x192', 'type': 'image/png'},
               {'src': 'icon-512.png', 'sizes': '512x512', 'type': 'image/png'}],
 }, indent=1))
