@@ -14,3 +14,4 @@ a { color: var(--accent); }
 .lang { float: right; font-size: 14px; }
 footer { margin-top: 48px; color: var(--soft); font-size: 14px; }
 @media (max-width: 480px) { h1 { font-size: 27px; } .lead { font-size: 18px; } }
+.store { display: inline-block; background: var(--ink); color: var(--sunny); font-weight: 700; text-decoration: none; padding: 12px 24px; border-radius: 999px; }
