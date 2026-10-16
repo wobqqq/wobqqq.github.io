@@ -14,7 +14,7 @@ The Cat & Duck Studio catalogue is a separate repo and site: `../cat-and-duck-st
 
 ## How to change
 
-- **A game page:** use the `game-site` skill in the game's repo. It edits `website/` there and copies it here.
+- **A game page:** use the `game-site` skill in the game's repo. It edits `website/` there and copies it here. After every copy, run `python3 tool/breadcrumbs.py .`: it adds the breadcrumbs (wobqqq › Cat & Duck Studio › game › privacy) and their JSON-LD to all game pages, and running it again does no harm.
 - **The home page:** edit `tool/build_home.py` (the `GAMES`, `PROJECTS` and `T` texts), rebuild, then check it at desktop and phone width.
 - **Publish:** branch → commit → `gh pr create --fill` → `gh pr merge --merge --delete-branch`. After about a minute, check with `curl -s -o /dev/null -w "%{http_code}" https://wobqqq.github.io/<path>`.
 - **Commits** as `Sergey Zakharevich <wobqqq@gmail.com>`, with no Co-Authored-By or "Generated with" lines.
