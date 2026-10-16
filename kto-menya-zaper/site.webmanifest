@@ -1,0 +1,27 @@
+{
+ "name": "Кто меня запер?",
+ "short_name": "Кто меня запер",
+ "start_url": "./",
+ "scope": "./",
+ "display": "browser",
+ "background_color": "#fff8ec",
+ "theme_color": "#ff8a3d",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  }
+ ]
+}
