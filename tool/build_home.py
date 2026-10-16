@@ -236,8 +236,9 @@ def page(lang):
 <ul class="grid">
 {chr(10).join(cards)}
 </ul>
-<footer><span>© 2026 Sergey Zakharevich</span><span>{t['contact']}: <a href="https://t.me/wobqqq">Telegram</a> · <a href="https://www.linkedin.com/in/wobqqq">LinkedIn</a> · <a href="https://github.com/wobqqq">GitHub</a> · <a href="mailto:wobqqq@gmail.com">wobqqq@gmail.com</a></span></footer>
+<footer><span>© <span class="year">2026</span> Sergey Zakharevich</span><span>{t['contact']}: <a href="https://t.me/wobqqq">Telegram</a> · <a href="https://www.linkedin.com/in/wobqqq">LinkedIn</a> · <a href="https://github.com/wobqqq">GitHub</a> · <a href="mailto:wobqqq@gmail.com">wobqqq@gmail.com</a></span></footer>
 </div>
+<script>document.querySelectorAll(".year").forEach(function (e) {{ e.textContent = new Date().getFullYear(); }});</script>
 </body>
 </html>
 '''
