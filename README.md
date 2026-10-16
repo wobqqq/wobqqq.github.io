@@ -10,3 +10,4 @@ Each folder is a copy of the `website/` folder of the game's own (private) repos
 | `kto-menya-zaper/` | https://wobqqq.github.io/kto-menya-zaper/ |
 | `dacha/` | https://wobqqq.github.io/dacha/ |
 | `durak/` | https://wobqqq.github.io/durak/ |
+| `skanvordy/` | https://wobqqq.github.io/skanvordy/ |
