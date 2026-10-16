@@ -1,7 +1,7 @@
-# wobqqq.github.io
+# wobqqq.github.io — Cat & Duck Studio
 
-Public pages of the games: one folder per game (home page and privacy policy in RU/EN).
-Each folder is a copy of the `website/` folder of the game's own (private) repository: edit there, copy here.
+Home page of Cat & Duck Studio (English at `/`, Russian at `/ru/`, built by `python3 tool/build_home.py .` from the list of games in it) and one folder per game (home page and privacy policy in RU/EN).
+Each game folder is a copy of the `website/` folder of the game's own (private) repository: edit there, copy here.
 
 | Folder | Game |
 |---|---|

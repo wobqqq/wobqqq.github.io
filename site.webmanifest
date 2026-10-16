@@ -1,11 +1,11 @@
 {
- "name": "Игры wobqqq",
- "short_name": "wobqqq",
+ "name": "Cat & Duck Studio",
+ "short_name": "Cat & Duck",
  "start_url": "./",
  "scope": "./",
  "display": "browser",
  "background_color": "#fff8ec",
- "theme_color": "#b5481a",
+ "theme_color": "#f2994a",
  "icons": [
   {
    "src": "icon-192.png",
@@ -16,12 +16,6 @@
    "src": "icon-512.png",
    "sizes": "512x512",
    "type": "image/png"
-  },
-  {
-   "src": "icon-512.png",
-   "sizes": "512x512",
-   "type": "image/png",
-   "purpose": "any"
   }
  ]
 }

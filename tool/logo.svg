@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 120 120" role="img" aria-label="Cat &amp; Duck Studio">
+  <circle cx="60" cy="60" r="58" fill="#fff1da"/>
+  <path d="M30 60 L28 30 L50 46 Z" fill="#f2994a"/>
+  <path d="M90 60 L92 30 L70 46 Z" fill="#f2994a"/>
+  <path d="M33 54 L32 37 L45 47 Z" fill="#ffc9a8"/>
+  <path d="M87 54 L88 37 L75 47 Z" fill="#ffc9a8"/>
+  <ellipse cx="60" cy="72" rx="35" ry="28" fill="#f2994a"/>
+  <path d="M44 66 q4 -5 8 0" stroke="#3a2a1e" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M68 66 q4 -5 8 0" stroke="#3a2a1e" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M57 74 h6 l-3 3.5 z" fill="#c2553a"/>
+  <path d="M60 77.5 q-4 5 -8 2 M60 77.5 q4 5 8 2" stroke="#3a2a1e" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <circle cx="41" cy="77" r="4.5" fill="#ff8f7a" opacity=".55"/>
+  <circle cx="79" cy="77" r="4.5" fill="#ff8f7a" opacity=".55"/>
+  <path d="M30 76 h-12 M31 82 h-11 M90 76 h12 M89 82 h11" stroke="#3a2a1e" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>
+  <g transform="translate(60 26) rotate(-6)">
+    <ellipse cx="0" cy="10" rx="17" ry="11" fill="#ffd25a"/>
+    <circle cx="-4" cy="-4" r="10" fill="#ffd25a"/>
+    <path d="M-14 -4 q-9 1 -10 4 q6 2 11 0 z" fill="#f28c28"/>
+    <circle cx="-6" cy="-6" r="2" fill="#3a2a1e"/>
+    <path d="M6 6 q8 -6 12 2 q-6 4 -12 2 z" fill="#f5bf2e"/>
+  </g>
+</svg>
