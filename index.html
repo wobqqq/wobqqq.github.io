@@ -12,28 +12,40 @@
 <title>Игры wobqqq</title>
 <meta name="description" content="Игры для Android: сайты и политики конфиденциальности.">
 <style>
-:root { --bg: #fff8ec; --card: #ffffff; --ink: #2d241c; --soft: #6b5d50; --accent: #b5481a; }
+:root { --bg: #fff8ec; --card: #ffffff; --ink: #2d241c; --soft: #6b5d50; --accent: #b5481a; --edge: #eadcc4; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.5 system-ui, sans-serif; }
-main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 64px; }
 h1 { font-size: 30px; margin: 0 0 20px; }
-ul { list-style: none; padding: 0; margin: 0; }
-li { background: var(--card); border-radius: 18px; padding: 14px; margin: 12px 0; box-shadow: 0 2px 0 #eadcc4; }
-li > a { display: flex; gap: 14px; align-items: center; color: var(--ink); text-decoration: none; }
-img { width: 64px; height: 64px; border-radius: 14px; flex: none; }
-small { display: block; margin-top: 8px; color: var(--soft); }
+ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+li { background: var(--card); border-radius: 22px; padding: 20px 16px 16px; box-shadow: 0 2px 0 var(--edge); display: flex; flex-direction: column; text-align: center; transition: transform .15s, box-shadow .15s; }
+li:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(80, 50, 20, .12); }
+li > a { display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; flex: 1; }
+img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 3px 8px rgba(80, 50, 20, .15); }
+b { display: block; font-size: 19px; line-height: 1.25; font-weight: 700; margin-bottom: 4px; }
+span { color: var(--soft); font-size: 15px; }
+span b { color: var(--ink); }
+small { display: block; margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--edge); color: var(--soft); font-size: 13px; }
 small a { color: var(--accent); }
+@media (max-width: 520px) {
+  ul { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  li { padding: 16px 10px 12px; border-radius: 18px; }
+  img { width: 84px; height: 84px; border-radius: 20px; }
+  b { font-size: 16px; }
+  span { font-size: 13px; }
+}
+@media (max-width: 340px) { ul { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <main>
 <h1>Игры</h1>
 <ul>
-<li><a href="bag-of-bags/"><img src="bag-of-bags/icon_512.png" alt=""><span><b>Пакет с пакетами</b><br>уютная головоломка</span></a> <small><a href="bag-of-bags/privacy.html">Политика конфиденциальности</a> · <a href="bag-of-bags/en/privacy.html">Privacy policy</a></small></li>
-<li><a href="zakatki/"><img src="zakatki/icon_512.png" alt=""><span><b>Закатки</b><br>уютная головоломка-сортировка</span></a> <small><a href="zakatki/privacy.html">Политика конфиденциальности</a> · <a href="zakatki/en/privacy.html">Privacy policy</a></small></li>
-<li><a href="kto-menya-zaper/"><img src="kto-menya-zaper/icon_512.png" alt=""><span><b>Кто меня запер?</b><br>головоломка про парковку</span></a> <small><a href="kto-menya-zaper/privacy.html">Политика конфиденциальности</a> · <a href="kto-menya-zaper/en/privacy.html">Privacy policy</a></small></li>
-<li><a href="dacha/"><img src="dacha/icon_512.png" alt=""><span><b>Дача: мой участок</b><br>уютная ферма на даче</span></a> <small><a href="dacha/privacy.html">Политика конфиденциальности</a> · <a href="dacha/en/privacy.html">Privacy policy</a></small></li>
-<li><a href="skanvordy/"><img src="skanvordy/icon_512.png" alt=""><span><b>Сканворды и филворды</b><br>сканворды со стрелками и филворды</span></a> <small><a href="skanvordy/privacy.html">Политика конфиденциальности</a> · <a href="skanvordy/en/privacy.html">Privacy policy</a></small></li>
+<li><a href="bag-of-bags/"><img src="bag-of-bags/icon_512.png" alt=""><span><b>Пакет с пакетами</b>уютная головоломка</span></a> <small><a href="bag-of-bags/privacy.html">Конфиденциальность</a> · <a href="bag-of-bags/en/privacy.html">Privacy</a></small></li>
+<li><a href="zakatki/"><img src="zakatki/icon_512.png" alt=""><span><b>Закатки</b>уютная головоломка-сортировка</span></a> <small><a href="zakatki/privacy.html">Конфиденциальность</a> · <a href="zakatki/en/privacy.html">Privacy</a></small></li>
+<li><a href="kto-menya-zaper/"><img src="kto-menya-zaper/icon_512.png" alt=""><span><b>Кто меня запер?</b>головоломка про парковку</span></a> <small><a href="kto-menya-zaper/privacy.html">Конфиденциальность</a> · <a href="kto-menya-zaper/en/privacy.html">Privacy</a></small></li>
+<li><a href="dacha/"><img src="dacha/icon_512.png" alt=""><span><b>Дача: мой участок</b>уютная ферма на даче</span></a> <small><a href="dacha/privacy.html">Конфиденциальность</a> · <a href="dacha/en/privacy.html">Privacy</a></small></li>
+<li><a href="skanvordy/"><img src="skanvordy/icon_512.png" alt=""><span><b>Сканворды и филворды</b>сканворды со стрелками и филворды</span></a> <small><a href="skanvordy/privacy.html">Конфиденциальность</a> · <a href="skanvordy/en/privacy.html">Privacy</a></small></li>
 </ul>
 </main>
 </body>
