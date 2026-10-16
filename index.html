@@ -1,52 +1,216 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cat & Duck Studio — cozy games and apps</title>
+<meta name="description" content="Cat & Duck Studio: cozy games and apps for Android, soon in your browser. Offline, no sign-up.">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#b5481a">
-<title>Игры wobqqq</title>
-<meta name="description" content="Игры для Android: сайты и политики конфиденциальности.">
+<meta name="theme-color" content="#f2994a">
+<meta property="og:title" content="Cat &amp; Duck Studio">
+<meta property="og:description" content="Cat & Duck Studio: cozy games and apps for Android, soon in your browser. Offline, no sign-up.">
+<meta property="og:image" content="https://wobqqq.github.io/icon-512.png">
+<link rel="alternate" hreflang="en" href="https://wobqqq.github.io/"><link rel="alternate" hreflang="ru" href="https://wobqqq.github.io/ru/"><link rel="alternate" hreflang="x-default" href="https://wobqqq.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root { --bg: #fff8ec; --card: #ffffff; --ink: #2d241c; --soft: #6b5d50; --accent: #b5481a; --edge: #eadcc4; }
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.5 system-ui, sans-serif; }
-main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 64px; }
-h1 { font-size: 30px; margin: 0 0 20px; }
-ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
-li { background: var(--card); border-radius: 22px; padding: 20px 16px 16px; box-shadow: 0 2px 0 var(--edge); display: flex; flex-direction: column; text-align: center; transition: transform .15s, box-shadow .15s; }
-li:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(80, 50, 20, .12); }
-li > a { display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; flex: 1; }
-img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 3px 8px rgba(80, 50, 20, .15); }
-b { display: block; font-size: 19px; line-height: 1.25; font-weight: 700; margin-bottom: 4px; }
-span { color: var(--soft); font-size: 15px; }
-span b { color: var(--ink); }
-small { display: block; margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--edge); color: var(--soft); font-size: 13px; }
-small a { color: var(--accent); }
-@media (max-width: 520px) {
-  ul { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  li { padding: 16px 10px 12px; border-radius: 18px; }
-  img { width: 84px; height: 84px; border-radius: 20px; }
-  b { font-size: 16px; }
-  span { font-size: 13px; }
+:root {
+  --bg: #fff8ec; --bg2: #ffeccc; --card: #ffffff; --ink: #2d241c; --soft: #6b5d50;
+  --accent: #b5481a; --accent-ink: #ffffff; --edge: #eadcc4; --chip: #fff1da; --logo-bg: #fff1da;
+  --shadow: 0 2px 0 var(--edge), 0 10px 24px rgba(90, 55, 20, .08);
 }
-@media (max-width: 340px) { ul { grid-template-columns: 1fr; } }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1712; --bg2: #2a2018; --card: #2a221b; --ink: #f6ebdc; --soft: #c2b29f;
+    --accent: #ff9a5c; --accent-ink: #1d1712; --edge: #3a2f25; --chip: #33291f; --logo-bg: #3a2e22;
+    --shadow: 0 2px 0 #120e0a, 0 10px 24px rgba(0, 0, 0, .3);
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 "Nunito", system-ui, sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+header.top { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; font-size: 19px; }
+.brand .logo { width: 40px; height: 40px; }
+.switch { display: flex; gap: 2px; background: var(--chip); padding: 4px; border-radius: 999px; }
+.switch a { color: var(--soft); text-decoration: none; font-weight: 800; font-size: 14px; padding: 5px 12px; border-radius: 999px; }
+.switch a[aria-current="page"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 0 var(--edge); }
+.hero { position: relative; overflow: hidden; border-radius: 32px; padding: 48px 28px 40px; margin: 6px 0 28px;
+  background: radial-gradient(circle at 85% 20%, rgba(255, 210, 90, .55), transparent 45%),
+              radial-gradient(circle at 10% 90%, rgba(242, 153, 74, .35), transparent 50%), var(--bg2);
+  display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; }
+.hero h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.05; margin: 0 0 6px; letter-spacing: -.02em; font-weight: 900; }
+.hero .tag { font-size: clamp(19px, 2.6vw, 24px); font-weight: 700; color: var(--accent); margin: 0 0 14px; }
+.hero p.lead { max-width: 560px; margin: 0; color: var(--soft); font-size: 18px; }
+.hero .logo { width: clamp(140px, 22vw, 230px); height: auto; filter: drop-shadow(0 12px 18px rgba(90, 55, 20, .18)); animation: bob 6s ease-in-out infinite; }
+@keyframes bob { 50% { transform: translateY(-6px) rotate(-2deg); } }
+@media (prefers-reduced-motion: reduce) { .hero .logo { animation: none; } }
+.platforms { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: var(--card); font-size: 14px; font-weight: 700; box-shadow: 0 1px 0 var(--edge); }
+.pill small { font-weight: 600; color: var(--soft); }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 8px 0 16px; }
+.bar h2 { margin: 0; font-size: 28px; font-weight: 900; }
+.tabs { display: flex; gap: 6px; background: var(--chip); padding: 4px; border-radius: 999px; }
+.tabs button { border: 0; background: transparent; color: var(--soft); font: inherit; font-size: 15px; font-weight: 700; padding: 7px 14px; border-radius: 999px; cursor: pointer; }
+.tabs button[aria-pressed="true"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 0 var(--edge); }
+.grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.card { position: relative; background: var(--card); border-radius: 24px; padding: 18px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px; transition: transform .18s ease, box-shadow .18s ease; }
+.card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 72px; border-radius: 24px 24px 0 0; background: linear-gradient(180deg, var(--c), transparent); opacity: .22; pointer-events: none; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 2px 0 var(--edge), 0 18px 32px rgba(90, 55, 20, .14); }
+.card .head { position: relative; display: flex; gap: 14px; align-items: center; color: var(--ink); text-decoration: none; }
+.card img { width: 76px; height: 76px; border-radius: 20px; flex: none; box-shadow: 0 4px 10px rgba(90, 55, 20, .18); }
+.card h3 { margin: 0; font-size: 19px; line-height: 1.2; font-weight: 800; }
+.card .badges { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+.badge { font-size: 12px; font-weight: 800; padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--soft); }
+.badge.soon { opacity: .75; }
+.card p { margin: 0; color: var(--soft); font-size: 15px; flex: 1; }
+.card .actions { display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 9px 14px; border-radius: 14px; background: var(--accent); color: var(--accent-ink); font-weight: 800; font-size: 14px; text-decoration: none; }
+.btn.ghost { background: var(--chip); color: var(--ink); }
+.card .legal { font-size: 13px; color: var(--soft); }
+.card.web { border: 2px dashed var(--edge); background: transparent; box-shadow: none; justify-content: center; text-align: center; align-items: center; min-height: 200px; }
+.card.web p { flex: none; }
+.card.web::before { display: none; }
+.card.web .big { font-size: 44px; line-height: 1; }
+.empty { color: var(--soft); padding: 24px 0; }
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 44px 0 24px; }
+.feature { background: var(--card); border-radius: 22px; padding: 18px; box-shadow: var(--shadow); }
+.feature b { display: block; font-size: 17px; margin-bottom: 2px; }
+.feature span { color: var(--soft); font-size: 15px; }
+.feature i { font-style: normal; font-size: 26px; display: block; margin-bottom: 6px; }
+footer { padding: 28px 0 48px; color: var(--soft); font-size: 15px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--edge); margin-top: 28px; }
+[hidden] { display: none !important; }
+@media (max-width: 720px) {
+  .hero { grid-template-columns: 1fr; padding: 30px 20px 28px; border-radius: 26px; text-align: left; }
+  .hero .logo { order: -1; width: 120px; }
+  .features { grid-template-columns: 1fr; }
+  .bar h2 { font-size: 24px; }
+}
+@media (max-width: 420px) {
+  .grid { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
+<div class="wrap">
+<header class="top"><a class="brand" href="./"><svg class="logo" viewBox="0 0 120 120" role="img" aria-label="Cat &amp; Duck Studio">
+  <circle cx="60" cy="60" r="58" fill="var(--logo-bg)"/>
+  <path d="M30 60 L28 30 L50 46 Z" fill="#f2994a"/>
+  <path d="M90 60 L92 30 L70 46 Z" fill="#f2994a"/>
+  <path d="M33 54 L32 37 L45 47 Z" fill="#ffc9a8"/>
+  <path d="M87 54 L88 37 L75 47 Z" fill="#ffc9a8"/>
+  <ellipse cx="60" cy="72" rx="35" ry="28" fill="#f2994a"/>
+  <path d="M44 66 q4 -5 8 0" stroke="#3a2a1e" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M68 66 q4 -5 8 0" stroke="#3a2a1e" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M57 74 h6 l-3 3.5 z" fill="#c2553a"/>
+  <path d="M60 77.5 q-4 5 -8 2 M60 77.5 q4 5 8 2" stroke="#3a2a1e" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <circle cx="41" cy="77" r="4.5" fill="#ff8f7a" opacity=".55"/>
+  <circle cx="79" cy="77" r="4.5" fill="#ff8f7a" opacity=".55"/>
+  <path d="M30 76 h-12 M31 82 h-11 M90 76 h12 M89 82 h11" stroke="#3a2a1e" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>
+  <g transform="translate(60 26) rotate(-6)">
+    <ellipse cx="0" cy="10" rx="17" ry="11" fill="#ffd25a"/>
+    <circle cx="-4" cy="-4" r="10" fill="#ffd25a"/>
+    <path d="M-14 -4 q-9 1 -10 4 q6 2 11 0 z" fill="#f28c28"/>
+    <circle cx="-6" cy="-6" r="2" fill="#3a2a1e"/>
+    <path d="M6 6 q8 -6 12 2 q-6 4 -12 2 z" fill="#f5bf2e"/>
+  </g>
+</svg><span>Cat &amp; Duck Studio</span></a><nav class="switch" aria-label="Language"><a href="./" hreflang="en" aria-current="page">EN</a><a href="ru/" hreflang="ru">RU</a></nav></header>
+<section class="hero">
+  <div>
+    <h1>Cat &amp; Duck Studio</h1>
+    <p class="tag">Cozy games and apps</p>
+    <p class="lead">We make calm games you like coming back to: puzzles, words and a country garden. Play offline, no sign-up.</p>
+    <div class="platforms"><span class="pill">🤖 Android</span><span class="pill">🌐 Web <small>· soon</small></span></div>
+  </div>
+  <svg class="logo" viewBox="0 0 120 120" role="img" aria-label="Cat &amp; Duck Studio">
+  <circle cx="60" cy="60" r="58" fill="var(--logo-bg)"/>
+  <path d="M30 60 L28 30 L50 46 Z" fill="#f2994a"/>
+  <path d="M90 60 L92 30 L70 46 Z" fill="#f2994a"/>
+  <path d="M33 54 L32 37 L45 47 Z" fill="#ffc9a8"/>
+  <path d="M87 54 L88 37 L75 47 Z" fill="#ffc9a8"/>
+  <ellipse cx="60" cy="72" rx="35" ry="28" fill="#f2994a"/>
+  <path d="M44 66 q4 -5 8 0" stroke="#3a2a1e" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M68 66 q4 -5 8 0" stroke="#3a2a1e" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M57 74 h6 l-3 3.5 z" fill="#c2553a"/>
+  <path d="M60 77.5 q-4 5 -8 2 M60 77.5 q4 5 8 2" stroke="#3a2a1e" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <circle cx="41" cy="77" r="4.5" fill="#ff8f7a" opacity=".55"/>
+  <circle cx="79" cy="77" r="4.5" fill="#ff8f7a" opacity=".55"/>
+  <path d="M30 76 h-12 M31 82 h-11 M90 76 h12 M89 82 h11" stroke="#3a2a1e" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>
+  <g transform="translate(60 26) rotate(-6)">
+    <ellipse cx="0" cy="10" rx="17" ry="11" fill="#ffd25a"/>
+    <circle cx="-4" cy="-4" r="10" fill="#ffd25a"/>
+    <path d="M-14 -4 q-9 1 -10 4 q6 2 11 0 z" fill="#f28c28"/>
+    <circle cx="-6" cy="-6" r="2" fill="#3a2a1e"/>
+    <path d="M6 6 q8 -6 12 2 q-6 4 -12 2 z" fill="#f5bf2e"/>
+  </g>
+</svg>
+</section>
 <main>
-<h1>Игры</h1>
-<ul>
-<li><a href="bag-of-bags/"><img src="bag-of-bags/icon_512.png" alt=""><span><b>Пакет с пакетами</b>уютная головоломка</span></a> <small><a href="bag-of-bags/privacy.html">Конфиденциальность</a> · <a href="bag-of-bags/en/privacy.html">Privacy</a></small></li>
-<li><a href="zakatki/"><img src="zakatki/icon_512.png" alt=""><span><b>Закатки</b>уютная головоломка-сортировка</span></a> <small><a href="zakatki/privacy.html">Конфиденциальность</a> · <a href="zakatki/en/privacy.html">Privacy</a></small></li>
-<li><a href="kto-menya-zaper/"><img src="kto-menya-zaper/icon_512.png" alt=""><span><b>Кто меня запер?</b>головоломка про парковку</span></a> <small><a href="kto-menya-zaper/privacy.html">Конфиденциальность</a> · <a href="kto-menya-zaper/en/privacy.html">Privacy</a></small></li>
-<li><a href="dacha/"><img src="dacha/icon_512.png" alt=""><span><b>Дача: мой участок</b>уютная ферма на даче</span></a> <small><a href="dacha/privacy.html">Конфиденциальность</a> · <a href="dacha/en/privacy.html">Privacy</a></small></li>
-<li><a href="skanvordy/"><img src="skanvordy/icon_512.png" alt=""><span><b>Сканворды и филворды</b>сканворды со стрелками и филворды</span></a> <small><a href="skanvordy/privacy.html">Конфиденциальность</a> · <a href="skanvordy/en/privacy.html">Privacy</a></small></li>
+<div class="bar"><h2>Games</h2>
+<div class="tabs" role="group"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="android" aria-pressed="false">Android</button><button type="button" data-f="web" aria-pressed="false">Web</button></div></div>
+<ul class="grid">
+<li class="card" data-p="android" style="--c:#ffd25a">
+  <a class="head" href="bag-of-bags/en/"><img src="bag-of-bags/icon_512.png" alt="" width="76" height="76" loading="lazy"><div><h3>Bag of Bags</h3><div class="badges"><span class="badge">Android</span><span class="badge soon">Web · soon</span></div></div></a>
+  <p>Fit every bag into one bag: fold, turn and nest. 240 levels.</p>
+  <div class="actions"><a class="btn" href="https://www.rustore.ru/catalog/app/com.bagofbags.game">Get it on RuStore</a><a class="legal" href="bag-of-bags/en/privacy.html">Privacy</a></div>
+</li>
+<li class="card" data-p="android" style="--c:#f6b93b">
+  <a class="head" href="zakatki/en/"><img src="zakatki/icon_512.png" alt="" width="76" height="76" loading="lazy"><div><h3>Pickle Sort</h3><div class="badges"><span class="badge">Android</span><span class="badge soon">Web · soon</span></div></div></a>
+  <p>Sort pickles, tomatoes and jam into jars and seal the lid. 1000 levels.</p>
+  <div class="actions"><a class="btn" href="https://www.rustore.ru/catalog/app/com.picklesort.game">Get it on RuStore</a><a class="legal" href="zakatki/en/privacy.html">Privacy</a></div>
+</li>
+<li class="card" data-p="android" style="--c:#ff8a3d">
+  <a class="head" href="kto-menya-zaper/en/"><img src="kto-menya-zaper/icon_512.png" alt="" width="76" height="76" loading="lazy"><div><h3>Who Blocked Me?</h3><div class="badges"><span class="badge">Android</span><span class="badge soon">Web · soon</span></div></div></a>
+  <p>Get every car out of the yard without a scratch. 300+ levels.</p>
+  <div class="actions"><a class="btn" href="https://www.rustore.ru/catalog/app/com.whoblockedme.game">Get it on RuStore</a><a class="legal" href="kto-menya-zaper/en/privacy.html">Privacy</a></div>
+</li>
+<li class="card" data-p="android" style="--c:#5b9a3c">
+  <a class="head" href="dacha/en/"><img src="dacha/icon_512.png" alt="" width="76" height="76" loading="lazy"><div><h3>My Dacha: Farm Story</h3><div class="badges"><span class="badge">Android</span><span class="badge soon">Web · soon</span></div></div></a>
+  <p>Plant, harvest, sell: garden beds, a greenhouse, hens and a cat on the porch.</p>
+  <div class="actions"><a class="btn" href="https://www.rustore.ru/catalog/app/com.mydacha.game">Get it on RuStore</a><a class="legal" href="dacha/en/privacy.html">Privacy</a></div>
+</li>
+<li class="card" data-p="android" style="--c:#c0392b">
+  <a class="head" href="skanvordy/en/"><img src="skanvordy/icon_512.png" alt="" width="76" height="76" loading="lazy"><div><h3>Scanwords & Word Search</h3><div class="badges"><span class="badge">Android</span><span class="badge soon">Web · soon</span></div></div></a>
+  <p>Arrow-word puzzles and word searches for every day, large letters.</p>
+  <div class="actions"><a class="btn" href="https://www.rustore.ru/catalog/app/com.scanwordgames.words">Get it on RuStore</a><a class="legal" href="skanvordy/en/privacy.html">Privacy</a></div>
+</li>
+<li class="card web" data-p="web">
+  <div class="big">🌐</div><h3>Coming to the browser</h3><p>Our games are coming to the web: open the page and play, nothing to install.</p>
+</li>
 </ul>
+<p class="empty" hidden>Nothing here yet — but soon.</p>
+<section class="features">
+  <div class="feature"><i>📴</i><b>Offline</b><span>Every game works without the internet.</span></div>
+  <div class="feature"><i>🙅</i><b>No sign-up</b><span>No accounts, no passwords.</span></div>
+  <div class="feature"><i>🛡️</i><b>Respectful</b><span>We do not collect personal data.</span></div>
+</section>
 </main>
+<footer><span>© 2026 Cat &amp; Duck Studio</span><span>Contact us: <a href="mailto:serzakharevich@yandex.by">serzakharevich@yandex.by</a></span></footer>
+</div>
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.tabs button');
+  var cards = document.querySelectorAll('.grid > li');
+  var empty = document.querySelector('.empty');
+  function show(f) {
+    var shown = 0;
+    cards.forEach(function (c) {
+      var ok = f === 'all' || (' ' + c.dataset.p + ' ').indexOf(' ' + f + ' ') >= 0;
+      c.hidden = !ok;
+      if (ok) shown++;
+    });
+    empty.hidden = shown > 0;
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.f === f)); });
+  }
+  buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.f); }); });
+})();
+</script>
 </body>
 </html>
