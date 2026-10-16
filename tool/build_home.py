@@ -1,4 +1,4 @@
-"""Builds the wobqqq.github.io home page (EN at /, RU at /ru/) into the given folder.
+"""Builds the wobqqq.github.io home page (English only) into the given folder.
 
 The studio lives in its own repo (https://wobqqq.github.io/cat-and-duck-studio/);
 game pages and privacy policies stay here, one folder per game.
@@ -208,7 +208,6 @@ def page(lang):
 <meta property="og:title" content="Sergey Zakharevich (wobqqq)">
 <meta property="og:description" content="{t['desc']}">
 <meta property="og:image" content="https://wobqqq.github.io/icon-512.png">
-<link rel="alternate" hreflang="en" href="https://wobqqq.github.io/"><link rel="alternate" hreflang="ru" href="https://wobqqq.github.io/ru/"><link rel="alternate" hreflang="x-default" href="https://wobqqq.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -216,7 +215,7 @@ def page(lang):
 </head>
 <body>
 <div class="wrap">
-<header class="top"><a class="brand" href="./">{MONO}<span>wobqqq</span></a>{switch}</header>
+<header class="top"><a class="brand" href="./">{MONO}<span>wobqqq</span></a></header>
 <section class="hero">
   <div>
     <p class="hi">{t['hi']} 👋</p>
@@ -245,8 +244,6 @@ def page(lang):
 
 
 (SITE / 'index.html').write_text(page('en'))
-(SITE / 'ru').mkdir(exist_ok=True)
-(SITE / 'ru' / 'index.html').write_text(page('ru'))
 (SITE / 'tool' / 'logo.svg').write_text(
     MONO.replace('class="mono" ', 'xmlns="http://www.w3.org/2000/svg" width="512" height="512" ').replace(' aria-hidden="true"', ''))
 (SITE / 'site.webmanifest').write_text(json.dumps({

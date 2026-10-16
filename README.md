@@ -1,6 +1,6 @@
 # wobqqq.github.io
 
-Personal home page of Sergey Zakharevich (wobqqq): English at `/`, Russian at `/ru/`, built by `python3 tool/build_home.py .`.
+Personal home page of Sergey Zakharevich (wobqqq), English only, built by `python3 tool/build_home.py .`.
 Cat & Duck Studio has its own site: https://wobqqq.github.io/cat-and-duck-studio/ (repo `cat-and-duck-studio`).
 
 The game pages stay here, one folder per game (home page and privacy policy in RU/EN; their URLs are in the stores, do not move them).
