@@ -191,7 +191,7 @@ def page(lang):
     contacts = (f'<a class="btn primary" href="https://github.com/wobqqq">{ICON["github"]}GitHub</a>'
                 f'<a class="btn" href="https://www.linkedin.com/in/wobqqq">{ICON["linkedin"]}LinkedIn</a>'
                 f'<a class="btn" href="https://t.me/wobqqq">{ICON["telegram"]}Telegram</a>'
-                f'<a class="btn" href="mailto:wobqqq@gmail.com">{ICON["email"]}wobqqq@gmail.com</a>')
+                f'<a class="btn" href="mailto:wobqqq@gmail.com" title="wobqqq@gmail.com">{ICON["email"]}Email</a>')
     return f'''<!doctype html>
 <html lang="{lang}">
 <head>
@@ -236,7 +236,7 @@ def page(lang):
 <ul class="grid">
 {chr(10).join(cards)}
 </ul>
-<footer><span>© <span class="year">2026</span> Sergey Zakharevich</span><span>{t['contact']}: <a href="https://t.me/wobqqq">Telegram</a> · <a href="https://www.linkedin.com/in/wobqqq">LinkedIn</a> · <a href="https://github.com/wobqqq">GitHub</a> · <a href="mailto:wobqqq@gmail.com">wobqqq@gmail.com</a></span></footer>
+<footer><span>© <span class="year">2026</span> Sergey Zakharevich</span><span>{t['contact']}: <a href="https://t.me/wobqqq">Telegram</a> · <a href="https://www.linkedin.com/in/wobqqq">LinkedIn</a> · <a href="https://github.com/wobqqq">GitHub</a> · <a href="mailto:wobqqq@gmail.com" title="wobqqq@gmail.com">Email</a></span></footer>
 </div>
 <script>document.querySelectorAll(".year").forEach(function (e) {{ e.textContent = new Date().getFullYear(); }});</script>
 </body>
