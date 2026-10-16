@@ -1,11 +1,11 @@
 {
- "name": "Cat & Duck Studio",
- "short_name": "Cat & Duck",
+ "name": "wobqqq",
+ "short_name": "wobqqq",
  "start_url": "./",
  "scope": "./",
  "display": "browser",
- "background_color": "#fff8ec",
- "theme_color": "#f2994a",
+ "background_color": "#f7f7fb",
+ "theme_color": "#6d5dfc",
  "icons": [
   {
    "src": "icon-192.png",

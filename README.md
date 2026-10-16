@@ -1,6 +1,9 @@
-# wobqqq.github.io — Cat & Duck Studio
+# wobqqq.github.io
 
-Home page of Cat & Duck Studio (English at `/`, Russian at `/ru/`, built by `python3 tool/build_home.py .` from the list of games in it) and one folder per game (home page and privacy policy in RU/EN).
+Personal home page of Sergey Zakharevich (wobqqq): English at `/`, Russian at `/ru/`, built by `python3 tool/build_home.py .`.
+Cat & Duck Studio has its own site: https://wobqqq.github.io/cat-and-duck-studio/ (repo `cat-and-duck-studio`).
+
+The game pages stay here, one folder per game (home page and privacy policy in RU/EN; their URLs are in the stores, do not move them).
 Each game folder is a copy of the `website/` folder of the game's own (private) repository: edit there, copy here.
 
 | Folder | Game |
