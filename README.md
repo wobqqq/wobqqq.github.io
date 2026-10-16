@@ -6,3 +6,5 @@ Each folder is a copy of the `website/` folder of the game's own (private) repos
 | Folder | Game |
 |---|---|
 | `bag-of-bags/` | https://wobqqq.github.io/bag-of-bags/ |
+| `zakatki/` | https://wobqqq.github.io/zakatki/ |
+| `kto-menya-zaper/` | https://wobqqq.github.io/kto-menya-zaper/ |
