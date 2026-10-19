@@ -1,0 +1,23 @@
+:root { --bg: #e6f5fc; --card: #fffdf8; --ink: #1e3557; --soft: #5b6f8c; --accent: #2e7bc4; --sunny: #ffc93a; --berry: #e8394a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 "Manrope", system-ui, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 72px; height: 72px; border-radius: 18px; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0; }
+h2 { color: var(--accent); font-size: 22px; margin: 32px 0 8px; }
+.lead { font-size: 20px; }
+.card { background: var(--card); border-radius: 20px; padding: 16px 20px; margin: 20px 0; box-shadow: 0 4px 0 #bfe3f2; border: 2px solid #d6e6ee; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+a { color: var(--accent); }
+.lang { float: right; font-size: 14px; }
+footer { margin-top: 48px; color: var(--soft); font-size: 14px; }
+@media (max-width: 480px) { h1 { font-size: 27px; } .lead { font-size: 18px; } }
+.store { display: inline-block; background: var(--ink); color: var(--sunny); font-weight: 700; text-decoration: none; padding: 12px 24px; border-radius: 999px; }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; }
+.stores .store { text-align: center; }
+@media (max-width: 480px) { .stores .store { flex: 1 1 100%; } }
+.shot { text-align: center; }
+.shot img { max-width: 100%; height: auto; border-radius: 24px; border: 3px solid var(--ink); }
+h2 { color: var(--berry); }
