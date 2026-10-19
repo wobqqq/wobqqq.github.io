@@ -16,7 +16,7 @@ import sys
 
 SITE = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else '.')
 BASE = 'https://wobqqq.github.io/'
-GAMES = ['bag-of-bags', 'zakatki', 'kto-menya-zaper', 'dacha', 'skanvordy']
+GAMES = ['bag-of-bags', 'zakatki', 'kto-menya-zaper', 'dacha', 'skanvordy', 'dveri-zakryvayutsya']
 TEXT = {
     'ru': {'studio': BASE + 'cat-and-duck-studio/ru/', 'privacy': 'Политика конфиденциальности', 'label': 'Навигация'},
     'en': {'studio': BASE + 'cat-and-duck-studio/', 'privacy': 'Privacy policy', 'label': 'Breadcrumb'},
