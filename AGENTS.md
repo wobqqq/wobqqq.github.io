@@ -8,7 +8,7 @@ Public GitHub Pages site (served from `main`; Actions stay on because Pages need
 |---|---|---|
 | `index.html` | owner's personal home page, English only | **generated**: edit `tool/build_home.py`, run `python3 tool/build_home.py .` |
 | `tool/logo.svg`, favicons, `site.webmanifest` | home page logo and icons | written by the build script; favicons resized from the logo with Pillow |
-| `<slug>/` (`bag-of-bags`, `zakatki`, `kto-menya-zaper`, `dacha`, `skanvordy`) | each game's page + privacy policy: RU at `/<slug>/`, EN at `/<slug>/en/` | **URLs are in the stores: never move or rename them**; the source is `website/` in the game's repo, copied here |
+| `<slug>/` (`bag-of-bags`, `zakatki`, `kto-menya-zaper`, `dacha`, `skanvordy`, `dveri-zakryvayutsya`) | each game's page + privacy policy: RU at `/<slug>/`, EN at `/<slug>/en/` | **URLs are in the stores: never move or rename them**; the source is `website/` in the game's repo, copied here |
 
 The Cat & Duck Studio catalogue is a separate repo and site: `../cat-and-duck-studio` → https://wobqqq.github.io/cat-and-duck-studio/
 
