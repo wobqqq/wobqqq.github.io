@@ -24,3 +24,7 @@ footer { margin-top: 48px; color: var(--soft); font-size: 14px; }
 .store { display: inline-block; text-align: center; background: var(--sun); color: var(--ink); font-weight: 700; text-decoration: none; padding: 12px 26px; border-radius: 999px; border: 2.5px solid var(--ink); box-shadow: 2px 4px 0 rgba(38,59,34,.3); margin: 4px 8px 4px 0; }
 .stores .store { margin: 0; }
 @media (max-width: 480px) { h1 { font-size: 27px; } .stores .store { flex: 1 1 100%; } .lead { font-size: 18px; } main { padding-left: 24px; } }
+
+
+.shot { text-align: center; margin: 24px 0; }
+.shot img { max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,.15); }

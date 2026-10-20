@@ -16,3 +16,7 @@ footer { margin-top: 48px; color: var(--soft); font-size: 14px; }
 @media (max-width: 480px) { h1 { font-size: 27px; } .lead { font-size: 18px; } }
 .stores { display: flex; flex-wrap: wrap; gap: 12px; }
 .store { display: inline-block; text-align: center; background: var(--ink); color: var(--sunny); font-weight: 700; text-decoration: none; padding: 12px 24px; border-radius: 999px; }
+
+
+.shot { text-align: center; margin: 24px 0; }
+.shot img { max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,.15); }
