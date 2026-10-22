@@ -15,3 +15,6 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 🚗 | `kto-menya-zaper/` | [Who Blocked Me?](https://wobqqq.github.io/kto-menya-zaper/en/) |
 | 🌻 | `dacha/` | [My Dacha](https://wobqqq.github.io/dacha/en/) |
 | 📝 | `skanvordy/` | [Cozy Scanwords and Word Search](https://wobqqq.github.io/skanvordy/en/) |
+| 🚇 | `dveri-zakryvayutsya/` | [Mind the Doors!](https://wobqqq.github.io/dveri-zakryvayutsya/en/) |
+| 😁 | `fabrika-ulybok/` | [Smile Factory](https://wobqqq.github.io/fabrika-ulybok/en/) |
+| 🧊 | `kholodilnik-po-polochkam/` | [Tidy Fridge](https://wobqqq.github.io/kholodilnik-po-polochkam/en/) |
