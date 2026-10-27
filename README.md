@@ -18,3 +18,4 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 🚇 | `dveri-zakryvayutsya/` | [Mind the Doors!](https://wobqqq.github.io/dveri-zakryvayutsya/en/) |
 | 😁 | `fabrika-ulybok/` | [Smile Factory](https://wobqqq.github.io/fabrika-ulybok/en/) |
 | 🧊 | `kholodilnik-po-polochkam/` | [Tidy Fridge](https://wobqqq.github.io/kholodilnik-po-polochkam/en/) |
+| 🌷 | `florist/` | [Florist](https://wobqqq.github.io/florist/en/) |
