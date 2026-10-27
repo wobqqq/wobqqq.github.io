@@ -19,3 +19,6 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 😁 | `fabrika-ulybok/` | [Smile Factory](https://wobqqq.github.io/fabrika-ulybok/en/) |
 | 🧊 | `kholodilnik-po-polochkam/` | [Tidy Fridge](https://wobqqq.github.io/kholodilnik-po-polochkam/en/) |
 | 🌷 | `florist/` | [Florist](https://wobqqq.github.io/florist/en/) |
+| 📻 | `skanvordy-sssr/` | [Scanwords from the USSR](https://wobqqq.github.io/skanvordy-sssr/en/) |
+| 🍷 | `skanvordy-18/` | [Scanwords for Adults](https://wobqqq.github.io/skanvordy-18/en/) |
+| 🌸 | `slova-otaku/` | [Otaku Words](https://wobqqq.github.io/slova-otaku/en/) |
