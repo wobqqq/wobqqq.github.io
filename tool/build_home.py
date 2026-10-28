@@ -10,7 +10,7 @@ import sys
 SITE = pathlib.Path(sys.argv[1])
 GH = 'https://github.com/wobqqq/'
 STUDIO = 'https://wobqqq.github.io/cat-and-duck-studio/'
-GAMES = ['bag-of-bags', 'zakatki', 'kto-menya-zaper', 'dacha', 'skanvordy', 'dveri-zakryvayutsya', 'fabrika-ulybok', 'kholodilnik-po-polochkam', 'florist', 'skanvordy-sssr', 'skanvordy-18', 'slova-otaku', 'kanalizatsiya']
+GAMES = ['bag-of-bags', 'zakatki', 'kto-menya-zaper', 'dacha', 'skanvordy', 'dveri-zakryvayutsya', 'fabrika-ulybok', 'kholodilnik-po-polochkam', 'florist', 'skanvordy-sssr', 'skanvordy-18', 'slova-otaku', 'kanalizatsiya', 'aviadispetcher']
 
 MONO = '''<svg class="mono" viewBox="0 0 64 64" aria-hidden="true">
   <defs>
