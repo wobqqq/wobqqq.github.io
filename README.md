@@ -24,3 +24,4 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 🌸 | `slova-otaku/` | [Otaku Words](https://wobqqq.github.io/slova-otaku/en/) |
 | 🐀 | `kanalizatsiya/` | [Sewer Pipes](https://wobqqq.github.io/kanalizatsiya/en/) |
 | ✈️ | `aviadispetcher/` | [Air Dispatcher: Landing](https://wobqqq.github.io/aviadispetcher/en/) |
+| 🪂 | `zatyazhnoy-pryzhok/` | [Skydive Hero](https://wobqqq.github.io/zatyazhnoy-pryzhok/en/) |
