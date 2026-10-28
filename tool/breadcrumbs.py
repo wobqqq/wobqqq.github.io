@@ -16,7 +16,10 @@ import sys
 
 SITE = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else '.')
 BASE = 'https://wobqqq.github.io/'
-GAMES = ['bag-of-bags', 'zakatki', 'kto-menya-zaper', 'dacha', 'skanvordy', 'dveri-zakryvayutsya', 'florist']
+# Every game page: a top-level folder with a page and a privacy policy (found, never listed by
+# hand, so a new game gets its crumbs without editing this script).
+GAMES = sorted(d.name for d in SITE.iterdir()
+               if d.is_dir() and (d / 'index.html').exists() and (d / 'privacy.html').exists())
 TEXT = {
     'ru': {'studio': BASE + 'cat-and-duck-studio/ru/', 'privacy': 'Политика конфиденциальности', 'label': 'Навигация'},
     'en': {'studio': BASE + 'cat-and-duck-studio/', 'privacy': 'Privacy policy', 'label': 'Breadcrumb'},
@@ -78,4 +81,8 @@ for slug in GAMES:
         if privacy.exists():
             apply(privacy, lang, root + [(name, game_url), (TEXT[lang]['privacy'], game_url + 'privacy.html')])
             count += 1
-print(f'OK   breadcrumbs on {count} pages')
+missing = [str(p) for slug in GAMES for p in (SITE / slug).glob('**/*.html')
+           if p.name in ('index.html', 'privacy.html') and 'crumbs:start' not in p.read_text(encoding='utf-8')]
+if missing:
+    sys.exit('FAIL breadcrumbs missing on: ' + ', '.join(missing))
+print(f'OK   breadcrumbs on {count} pages of {len(GAMES)} games')
