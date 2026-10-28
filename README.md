@@ -22,3 +22,4 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 📻 | `skanvordy-sssr/` | [Scanwords from the USSR](https://wobqqq.github.io/skanvordy-sssr/en/) |
 | 🍷 | `skanvordy-18/` | [Scanwords for Adults](https://wobqqq.github.io/skanvordy-18/en/) |
 | 🌸 | `slova-otaku/` | [Otaku Words](https://wobqqq.github.io/slova-otaku/en/) |
+| 🐀 | `kanalizatsiya/` | [Sewer Pipes](https://wobqqq.github.io/kanalizatsiya/en/) |
