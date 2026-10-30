@@ -1,22 +1,52 @@
-:root { --bg: #e9e3d7; --card: #fbf8f1; --ink: #1f272c; --soft: #5d666c; --accent: #1c86d1; --sunny: #8bea2e; }
+/* Dark concrete, rust and hazard yellow: the look of the game itself. */
+:root { --bg: #191c1d; --card: #2a2f31; --edge: #55504a; --ink: #ece6d8; --soft: #a6a89f; --accent: #f2c230; --rust: #b85a24; --rust-dark: #6e2e0e; --slime: #5bc236; --water: #7ccbf7; }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 system-ui, sans-serif; }
+html { background: var(--bg); }
+body {
+  margin: 0; color: var(--ink); font: 17px/1.55 system-ui, sans-serif;
+  background-color: var(--bg);
+  /* Cast concrete slabs with rust running down from the top. */
+  background-image:
+    linear-gradient(to bottom, rgba(184,90,36,.32), rgba(184,90,36,0) 220px),
+    linear-gradient(rgba(0,0,0,.28) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(0,0,0,.28) 2px, transparent 2px),
+    linear-gradient(to bottom, #262a2b, #191c1d 600px);
+  background-size: 100% 100%, 100% 180px, 240px 100%, 100% 100%;
+  background-repeat: no-repeat, repeat, repeat, no-repeat;
+}
+/* A hazard stripe along the top and the foot of the page. */
+body::before, body::after {
+  content: ""; display: block; height: 14px;
+  background: repeating-linear-gradient(-45deg, var(--accent) 0 18px, #15181a 18px 36px);
+}
 main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
 header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
-header img { width: 72px; height: 72px; border-radius: 18px; }
-h1 { font-size: 34px; line-height: 1.15; margin: 0; }
-h2 { color: var(--accent); font-size: 22px; margin: 32px 0 8px; }
+header img { width: 72px; height: 72px; border-radius: 18px; border: 3px solid var(--edge); box-shadow: 0 6px 14px rgba(0,0,0,.5); }
+h1 { font-size: 34px; line-height: 1.15; margin: 0; color: var(--accent); text-shadow: 0 3px 0 #000; overflow-wrap: break-word; hyphens: auto; }
+header h1 { text-transform: uppercase; letter-spacing: .02em; }
+h2 { color: var(--accent); font-size: 22px; margin: 32px 0 8px; text-transform: uppercase; letter-spacing: .03em; }
 .lead { font-size: 20px; }
-.card { background: var(--card); border-radius: 20px; padding: 16px 20px; margin: 20px 0; box-shadow: 0 4px 0 #d3c9b6; }
+.card {
+  background: var(--card); border: 2px solid var(--edge); border-left: 6px solid var(--rust);
+  border-radius: 14px; padding: 16px 20px; margin: 20px 0; box-shadow: 0 6px 0 #0e1112;
+  background-image: radial-gradient(circle, #6b6760 2.5px, transparent 3px), radial-gradient(circle, #6b6760 2.5px, transparent 3px), radial-gradient(circle, #6b6760 2.5px, transparent 3px), radial-gradient(circle, #6b6760 2.5px, transparent 3px);
+  background-size: 12px 12px; background-position: left 6px top 8px, right 8px top 8px, left 6px bottom 8px, right 8px bottom 8px; background-repeat: no-repeat;
+}
+.card b { color: var(--accent); }
 ul { padding-left: 20px; }
 li { margin: 6px 0; }
-a { color: var(--accent); }
+li::marker { color: var(--rust); }
+a { color: var(--water); }
 .lang { float: right; font-size: 14px; }
-footer { margin-top: 48px; color: var(--soft); font-size: 14px; }
+footer { margin-top: 48px; color: var(--soft); font-size: 14px; border-top: 2px solid var(--edge); padding-top: 16px; }
 @media (max-width: 480px) { h1 { font-size: 27px; } .lead { font-size: 18px; } }
-.store { display: inline-block; background: var(--ink); color: var(--sunny); font-weight: 700; text-decoration: none; padding: 12px 24px; border-radius: 999px; }
+.store {
+  display: inline-block; background: var(--accent); color: #15181a; font-weight: 800; text-decoration: none;
+  padding: 12px 24px; border-radius: 10px; border: 2px solid #15181a; box-shadow: 0 4px 0 var(--rust-dark);
+}
+.store:hover { filter: brightness(1.08); }
 .stores { display: flex; flex-wrap: wrap; gap: 12px; }
 .stores .store { text-align: center; }
 @media (max-width: 480px) { .stores .store { flex: 1 1 100%; } }
 .shot { text-align: center; margin: 24px 0; }
-.shot img { max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,.15); }
+.shot img { display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 20px; border: 3px solid var(--edge); box-shadow: 0 8px 24px rgba(0,0,0,.6); }
