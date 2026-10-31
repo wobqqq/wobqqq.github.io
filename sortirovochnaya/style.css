@@ -1,0 +1,177 @@
+/* Sorting Yard / Сортировочная: the game page in the game's Soviet railway palette.
+   Layout: a loco-green band (crumbs, language link, enamel name plate, lead), a rail-track
+   divider, an ivory paper sheet with the content, a dark-green footer. No JS, no images
+   besides the icon and the screenshot. */
+:root {
+  --loco: #1F4D3A;
+  --loco-dark: #143528;
+  --loco-light: #2F6A51;
+  --kumach: #B8322A;
+  --kumach-dark: #7E1F19;
+  --brass: #C9A44C;
+  --brass-light: #EBD597;
+  --brass-dark: #8C6D2A;
+  --ivory: #F3E9D2;
+  --paper: #FBF5E6;
+  --graphite: #24262A;
+  --steel: #6D8FA6;
+  /* Names the breadcrumbs block (tool/breadcrumbs.py in the site repo) reads. */
+  --ink: var(--graphite);
+  --soft: #5E5A50;
+  --accent: var(--kumach);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--loco-dark);
+  color: var(--ink);
+  font: 17px/1.6 "Golos Text", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow-wrap: break-word;
+}
+main { display: block; }
+a { color: var(--kumach); }
+h1, h2, .plate-name { font-family: "Prosto One", "Golos Text", system-ui, sans-serif; font-weight: 400; }
+
+/* Shared column width. */
+main > .crumbs, .band, .wrap { max-width: 760px; margin-left: auto; margin-right: auto; padding-left: 16px; padding-right: 16px; }
+
+/* Breadcrumbs sit on the green band: override their default colours (more specific selector). */
+main > .crumbs { margin-top: 0; margin-bottom: 0; padding-top: 14px; color: rgba(243, 233, 210, .72); }
+main > .crumbs a:hover { color: var(--brass-light); }
+main > .crumbs [aria-current] { color: var(--ivory); }
+
+/* Top band: dusk loco green with a soft lamp glow. */
+.top {
+  background:
+    radial-gradient(120% 90% at 85% 0%, rgba(235, 213, 151, .16), transparent 60%),
+    linear-gradient(180deg, var(--loco-dark) 0%, var(--loco) 55%, var(--loco-light) 100%);
+}
+.band { padding-top: 16px; padding-bottom: 26px; color: var(--ivory); }
+.lang {
+  float: right; margin: 4px 0 8px 12px; font-size: 14px; color: var(--brass-light);
+  text-decoration: none; border: 1px solid rgba(201, 164, 76, .6); border-radius: 6px; padding: 3px 10px;
+}
+.lang:hover { background: rgba(201, 164, 76, .15); }
+
+/* Enamel name plate: dark green enamel, brass double rim, four rivets. */
+.plate {
+  clear: both;
+  display: flex; align-items: center; gap: 14px;
+  margin: 12px 0 18px; padding: 14px 18px;
+  background:
+    radial-gradient(circle at 9px 9px, var(--brass-light) 0 2px, var(--brass-dark) 2.5px, transparent 3.5px),
+    radial-gradient(circle at calc(100% - 9px) 9px, var(--brass-light) 0 2px, var(--brass-dark) 2.5px, transparent 3.5px),
+    radial-gradient(circle at 9px calc(100% - 9px), var(--brass-light) 0 2px, var(--brass-dark) 2.5px, transparent 3.5px),
+    radial-gradient(circle at calc(100% - 9px) calc(100% - 9px), var(--brass-light) 0 2px, var(--brass-dark) 2.5px, transparent 3.5px),
+    linear-gradient(160deg, #1A4433 0%, var(--loco-dark) 70%);
+  border: 3px solid var(--brass);
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 2px var(--loco-dark), inset 0 0 0 3px var(--brass-dark), 0 8px 20px rgba(0, 0, 0, .35);
+}
+.plate img {
+  flex: 0 0 auto; width: 72px; height: 72px; border-radius: 16px;
+  box-shadow: 0 0 0 2px var(--brass), 0 3px 8px rgba(0, 0, 0, .4);
+}
+.plate h1, .plate .plate-name {
+  margin: 0; min-width: 0;
+  font-size: clamp(22px, 6.6vw, 40px); line-height: 1.15; letter-spacing: .02em;
+  color: var(--brass-light);
+  text-shadow: 0 1px 0 var(--brass-dark), 0 2px 6px rgba(0, 0, 0, .45);
+}
+.plate small { display: block; margin-top: 4px; font: 600 13px/1.3 "Golos Text", system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
+.lead { margin: 0; font-size: 20px; line-height: 1.45; color: var(--ivory); }
+
+/* Rail-track divider: ballast, sleepers and two steel rails, all gradients. */
+.rails {
+  height: 26px;
+  background:
+    linear-gradient(var(--steel), #9DB6C6 40%, var(--steel)) 0 6px / 100% 3px no-repeat,
+    linear-gradient(var(--steel), #9DB6C6 40%, var(--steel)) 0 17px / 100% 3px no-repeat,
+    repeating-linear-gradient(90deg, #4B3A28 0 9px, transparent 9px 28px) 0 3px / 100% 20px no-repeat,
+    linear-gradient(#3A3C40, var(--graphite));
+}
+
+/* Paper sheet with the content. */
+.sheet { background: var(--paper); padding: 28px 0 40px; }
+.sheet p { margin: 0 0 14px; }
+h2 { color: var(--loco); font-size: 24px; line-height: 1.25; margin: 32px 0 12px; }
+.sheet h1 { color: var(--loco); font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+
+/* Screenshot: landscape, centred in the column (standards/10 §10.4). */
+.shot { text-align: center; margin: 26px 0; }
+.shot img {
+  display: block; margin: 0 auto; max-width: 100%; height: auto;
+  border-radius: 12px; background: var(--ivory);
+  box-shadow: 0 0 0 3px var(--brass), 0 0 0 6px var(--loco), 0 12px 26px rgba(20, 53, 40, .3);
+}
+
+/* Feature list as a waybill (натурный лист) / ticket card. */
+.card {
+  position: relative; margin: 30px 0; padding: 0 0 6px;
+  background: var(--ivory);
+  border: 1px solid var(--brass-dark); border-radius: 10px;
+  box-shadow: 0 4px 0 #E2D2AC, 0 10px 22px rgba(36, 38, 42, .1);
+}
+/* Ticket notches on both sides, level with the brass rule under the head. */
+.card-head::before, .card-head::after {
+  content: ""; position: absolute; bottom: -10px; width: 16px; height: 16px; border-radius: 50%;
+  background: var(--paper); border: 1px solid var(--brass-dark);
+}
+.card-head::before { left: -9px; clip-path: inset(0 0 0 50%); }
+.card-head::after { right: -9px; clip-path: inset(0 50% 0 0); }
+.card-head {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  position: relative; margin: 0; padding: 12px 20px 10px;
+  border-bottom: 4px double var(--brass);
+  font: 600 13px/1.3 "Golos Text", system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--brass-dark);
+}
+.card-head b { font: 400 18px/1.2 "Prosto One", "Golos Text", sans-serif; letter-spacing: .04em; color: var(--kumach); }
+.card ul { list-style: none; margin: 0; padding: 8px 20px 6px; }
+.card li { position: relative; padding: 10px 0 10px 30px; border-bottom: 1px dashed rgba(140, 109, 42, .45); }
+.card li:last-child { border-bottom: 0; }
+/* Marker: a tiny kumach wagon on two wheels. */
+.card li::before {
+  content: ""; position: absolute; left: 0; top: 17px; width: 18px; height: 13px;
+  background:
+    radial-gradient(circle at 4px 11px, var(--graphite) 0 2px, transparent 2.5px),
+    radial-gradient(circle at 14px 11px, var(--graphite) 0 2px, transparent 2.5px),
+    linear-gradient(var(--kumach), var(--kumach)) 0 0 / 18px 9px no-repeat;
+  border-radius: 2px;
+}
+.card li b { color: var(--loco); }
+
+.depart { font-weight: 600; color: var(--loco); }
+
+/* Store buttons: kumach console keys, side by side. */
+.stores { display: flex; flex-wrap: wrap; gap: 14px; margin: 8px 0 0; }
+.store {
+  flex: 1 1 220px; display: block; text-align: center;
+  padding: 14px 20px; border-radius: 10px;
+  background: linear-gradient(180deg, #CB3F35, var(--kumach) 60%, #A52B24);
+  color: var(--ivory); font-weight: 700; font-size: 17px; text-decoration: none; letter-spacing: .02em;
+  border: 1px solid var(--kumach-dark);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 4px 0 var(--kumach-dark), 0 8px 14px rgba(126, 31, 25, .25);
+  transition: transform .08s, box-shadow .08s;
+}
+.store:hover { background: linear-gradient(180deg, #D4473C, #C0362D 60%, #A52B24); }
+.store:active { transform: translateY(3px); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 0 var(--kumach-dark); }
+.store:focus-visible, .lang:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }
+
+/* Thin brass rail before the download section. */
+.rule { height: 0; margin: 34px 0 0; border: 0; border-top: 4px double var(--brass); }
+
+footer { padding: 22px 0 36px; color: rgba(243, 233, 210, .8); font-size: 14px; }
+footer a { color: var(--brass-light); }
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .plate { padding: 12px 14px; gap: 12px; }
+  .plate img { width: 60px; height: 60px; border-radius: 14px; }
+  .lead { font-size: 18px; }
+  h2 { font-size: 22px; }
+  .sheet h1 { font-size: 24px; }
+  .card-head, .card ul { padding-left: 16px; padding-right: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { .store { transition: none; } }
