@@ -1,0 +1,25 @@
+:root { --bg: #1c1714; --card: rgba(255,255,255,.06); --line: rgba(195,176,145,.25); --ink: #efe9dc; --soft: #c3b091; --accent: #e8742a; --red: #b22222; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, sans-serif; }
+.hero { position: relative; height: 300px; background: #2a211b url(hero.jpg) center 45% / cover no-repeat; }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28,23,20,0) 35%, var(--bg) 100%); }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; position: relative; z-index: 1; }
+.hero + main { margin-top: -150px; padding-top: 0; }
+header { display: flex; align-items: center; gap: 18px; margin-bottom: 24px; }
+header img { width: 96px; height: 96px; border-radius: 24px; box-shadow: 0 8px 28px rgba(0,0,0,.5); border: 2px solid rgba(195,176,145,.7); }
+h1 { font-size: 38px; line-height: 1.1; margin: 0; text-shadow: 0 2px 12px rgba(0,0,0,.6); }
+h2 { color: var(--accent); font-size: 22px; margin: 36px 0 10px; }
+.lead { font-size: 20px; color: var(--soft); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 22px; margin: 24px 0; border-left: 4px solid var(--red); }
+ul { padding-left: 20px; margin: 0; }
+li { margin: 8px 0; }
+li::marker { color: var(--accent); }
+a { color: #e0c48a; }
+.lang { float: right; font-size: 14px; color: #fff; background: rgba(255,255,255,.1); padding: 4px 12px; border-radius: 14px; text-decoration: none; }
+.hero + main .lang { float: none; position: absolute; top: -130px; right: 16px; background: rgba(28,23,20,.6); }
+footer { margin-top: 40px; font-size: 14px; color: var(--soft); }
+@media (max-width: 480px) { .hero { height: 220px; } .hero + main { margin-top: -110px; } .hero + main .lang { top: -96px; } header img { width: 72px; height: 72px; border-radius: 18px; } h1 { font-size: 28px; } .lead { font-size: 18px; } }
+.store { display: inline-block; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none; padding: 12px 30px; border-radius: 10px; box-shadow: 0 4px 0 #8f3f10; margin: 4px 6px 4px 0; }
+.store:hover { background: #f08a45; }
+.shot { margin: 28px 0; }
+.shot img { display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 28px rgba(0,0,0,.5); }
