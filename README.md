@@ -26,3 +26,4 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | ✈️ | `aviadispetcher/` | [Air Dispatcher: Landing](https://wobqqq.github.io/aviadispetcher/en/) |
 | 🪂 | `zatyazhnoy-pryzhok/` | [Skydive Hero](https://wobqqq.github.io/zatyazhnoy-pryzhok/en/) |
 | 🪖 | `stalnoy-front/` | [Steel Front](https://wobqqq.github.io/stalnoy-front/en/) |
+| 🚂 | `sortirovochnaya/` | [Sorting Yard](https://wobqqq.github.io/sortirovochnaya/en/) |
