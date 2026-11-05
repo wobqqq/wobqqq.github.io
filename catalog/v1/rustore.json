@@ -1,0 +1,90 @@
+{
+ "format": 1,
+ "store": "rustore",
+ "version": 1,
+ "issued": "2026-11-05T20:03:36Z",
+ "expires": "2027-11-05T20:03:36Z",
+ "mirrors": [],
+ "games": [
+  {
+   "slug": "bag-of-bags",
+   "name": "Bag of Bags",
+   "nameRu": "Пакет с пакетами",
+   "package": "com.bagofbags.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "bag-of-bags-df2319b9.webp",
+   "sha256": "df2319b9f555dda9c38eabd1ba55321806c01066cb1268207b3659e1340bb940"
+  },
+  {
+   "slug": "zakatki",
+   "name": "Pickle Sort",
+   "nameRu": "Закатки",
+   "package": "com.picklesort.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "zakatki-cadbf5d7.webp",
+   "sha256": "cadbf5d73fa4b1f0d1d2c52e83f49866ba0956df06f0da7204860caec7fbebce"
+  },
+  {
+   "slug": "kto-menya-zaper",
+   "name": "Who Blocked Me?",
+   "nameRu": "Кто меня запер?",
+   "package": "com.whoblockedme.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "kto-menya-zaper-3b0dd53f.webp",
+   "sha256": "3b0dd53f0c11bed0359f8a8963536066af144a2bbba677d9ab4402c624a6b31c"
+  },
+  {
+   "slug": "dacha",
+   "name": "My Dacha",
+   "nameRu": "Дача",
+   "package": "com.mydacha.game",
+   "genre": "simulation",
+   "age": 0,
+   "icon": "dacha-d1475e62.webp",
+   "sha256": "d1475e625ae8cdf7b25009eb485e5732bc72a52a550ce2a74db50c4623889da8"
+  },
+  {
+   "slug": "skanvordy",
+   "name": "Cozy Scanwords and Word Search",
+   "nameRu": "Уютные Сканворды и Филворды",
+   "package": "com.scanwordgames.words",
+   "genre": "words",
+   "age": 0,
+   "icon": "skanvordy-9110d90f.webp",
+   "sha256": "9110d90f99041d7a965eca22a8581aaf30de07a0536e2583fce349ba379a26b6"
+  },
+  {
+   "slug": "dveri-zakryvayutsya",
+   "name": "Mind the Doors!",
+   "nameRu": "Осторожно, двери закрываются!",
+   "package": "com.mindthedoors.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "dveri-zakryvayutsya-95c0eac8.webp",
+   "sha256": "95c0eac874d294f5e3df9280084d4a57af9a8b252c443c6865e3d3626f447dd5"
+  },
+  {
+   "slug": "fabrika-ulybok",
+   "name": "Smile Factory",
+   "nameRu": "Фабрика улыбок",
+   "package": "com.smilefactory.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "fabrika-ulybok-12febf65.webp",
+   "sha256": "12febf65457c8385285dd21c30a9f71cf40db38901d24932e04d2659f45fb504"
+  },
+  {
+   "slug": "kholodilnik-po-polochkam",
+   "name": "Tidy Fridge",
+   "nameRu": "Холодильник по полочкам",
+   "package": "com.tidyfridge.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "kholodilnik-po-polochkam-ed089219.webp",
+   "sha256": "ed089219f9c02ba9cea74ac05fe88e51ef1d907ba6f38bec6c41eff46f564dd9"
+  }
+ ]
+}
