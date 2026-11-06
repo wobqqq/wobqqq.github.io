@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 4,
- "issued": "2026-11-06T06:52:13Z",
- "expires": "2027-11-06T06:52:13Z",
+ "version": 5,
+ "issued": "2026-11-06T16:51:13Z",
+ "expires": "2027-11-06T16:51:13Z",
  "mirrors": [],
  "games": [
   {
@@ -102,7 +102,19 @@
    "genre": "words",
    "age": 6,
    "icon": "skanvordy-sssr-8ba98a70.webp",
-   "sha256": "8ba98a7026561d5cf792182787e43f1e75e4c001988eefa3aab69b3d09c50d82"
+   "sha256": "8ba98a7026561d5cf792182787e43f1e75e4c001988eefa3aab69b3d09c50d82",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119605979"
+  },
+  {
+   "slug": "sortirovochnaya",
+   "name": "Sorting Yard",
+   "nameRu": "Сортировочная",
+   "package": "com.sortingyard.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "sortirovochnaya-fb33d674.webp",
+   "sha256": "fb33d674370f82df20220a6c9d5a7029e2cc002ef6eb8d5b31e765993153c9c4",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119630507"
   }
  ]
 }
