@@ -30,4 +30,5 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 🍄 | `tihaya-ohota/` | [Mushroom Picker](https://wobqqq.github.io/tihaya-ohota/en/) |
 | 📼 | `peremotka-90/` | [90s Rewind](https://wobqqq.github.io/peremotka-90/en/) |
 | 🐈 | `kot-na-klave/` | [Cat on Keyboard](https://wobqqq.github.io/kot-na-klave/en/) |
+| 🧖 | `banny-den/` | [Bathhouse Master](https://wobqqq.github.io/banny-den/en/) |
 | 🔦 | `klass-13/` | [Classroom 13](https://wobqqq.github.io/klass-13/en/) |
