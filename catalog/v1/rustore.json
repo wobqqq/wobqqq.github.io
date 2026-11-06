@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "rustore",
- "version": 1,
- "issued": "2026-11-05T20:03:36Z",
- "expires": "2027-11-05T20:03:36Z",
+ "version": 2,
+ "issued": "2026-11-06T06:42:05Z",
+ "expires": "2027-11-06T06:42:05Z",
  "mirrors": [],
  "games": [
   {
@@ -85,6 +85,16 @@
    "age": 0,
    "icon": "kholodilnik-po-polochkam-ed089219.webp",
    "sha256": "ed089219f9c02ba9cea74ac05fe88e51ef1d907ba6f38bec6c41eff46f564dd9"
+  },
+  {
+   "slug": "stalnoy-front",
+   "name": "Steel Front",
+   "nameRu": "Стальной фронт",
+   "package": "com.steelfront.game",
+   "genre": "strategy",
+   "age": 12,
+   "icon": "stalnoy-front-964b801c.webp",
+   "sha256": "964b801c0bcb20ef900a7a79eae23c984e101e91214b6d8a066805fe0d8060f5"
   }
  ]
 }
