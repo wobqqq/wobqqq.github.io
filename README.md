@@ -29,3 +29,4 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 🚂 | `sortirovochnaya/` | [Sorting Yard](https://wobqqq.github.io/sortirovochnaya/en/) |
 | 🍄 | `tihaya-ohota/` | [Mushroom Picker](https://wobqqq.github.io/tihaya-ohota/en/) |
 | 📼 | `peremotka-90/` | [90s Rewind](https://wobqqq.github.io/peremotka-90/en/) |
+| 🐈 | `kot-na-klave/` | [Cat on Keyboard](https://wobqqq.github.io/kot-na-klave/en/) |
