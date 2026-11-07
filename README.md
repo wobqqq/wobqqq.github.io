@@ -34,3 +34,4 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 🔦 | `klass-13/` | [Classroom 13](https://wobqqq.github.io/klass-13/en/) |
 | 🛗 | `lift-v-panelke/` | [Panel House Lift](https://wobqqq.github.io/lift-v-panelke/en/) |
 | 🧣 | `po-pogode/` | [Weather Dress Up](https://wobqqq.github.io/po-pogode/en/) |
+| 🔧 | `garazh-deda/` | [Grandpa’s Garage](https://wobqqq.github.io/garazh-deda/en/) |
