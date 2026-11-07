@@ -1,0 +1,27 @@
+{
+ "name": "Гараж деда",
+ "short_name": "Гараж деда",
+ "start_url": "./",
+ "scope": "./",
+ "display": "browser",
+ "background_color": "#eff4ff",
+ "theme_color": "#5e6b3a",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  }
+ ]
+}
