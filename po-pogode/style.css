@@ -1,0 +1,24 @@
+/* «По погоде»: the weather atelier — milk paper, terracotta felt, stitched cards. */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@400;700;800&family=Pacifico&display=swap");
+:root { --bg: #f6ebdd; --card: #fffaf3; --ink: #30343b; --soft: #6b5d52; --accent: #c0603a; --deep: #7e3a21; --mustard: #d9a233; --stitch: #c9ae86; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 "Nunito", system-ui, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 80px; height: 80px; border-radius: 20px; box-shadow: 0 4px 12px rgba(126,58,33,.25); }
+h1 { font-family: "Pacifico", "Comfortaa", cursive; font-weight: 400; color: var(--deep); font-size: 40px; line-height: 1.2; margin: 0; }
+h2 { font-family: "Comfortaa", system-ui, sans-serif; color: var(--accent); font-size: 22px; margin: 32px 0 8px; }
+.lead { font-family: "Comfortaa", system-ui, sans-serif; font-weight: 700; font-size: 20px; color: var(--deep); }
+.card { background: var(--card); border-radius: 20px; padding: 16px 20px; margin: 20px 0; border: 2px dashed var(--stitch); box-shadow: 0 4px 0 #e2c9a8; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+a { color: var(--accent); }
+.lang { float: right; font-size: 14px; }
+footer { margin-top: 48px; color: var(--soft); font-size: 14px; }
+@media (max-width: 480px) { h1 { font-size: 32px; } .lead { font-size: 18px; } }
+.store { display: inline-block; background: var(--deep); color: #fff4e6; font-weight: 800; text-decoration: none; padding: 12px 24px; border-radius: 999px; border: 3px solid var(--mustard); }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; }
+.stores .store { text-align: center; }
+@media (max-width: 480px) { .stores .store { flex: 1 1 100%; } }
+.shot { text-align: center; margin: 24px 0; }
+.shot img { display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,.15); }
