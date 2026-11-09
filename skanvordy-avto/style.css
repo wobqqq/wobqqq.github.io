@@ -1,0 +1,26 @@
+:root { --bg: #15181d; --plate: #23272e; --edge: #4c535e; --ink: #fff3dc; --soft: #b7bfca; --yellow: #ffc21a; --orange: #ff7a1a; --red: #e8303a; --green: #3fd883; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg) repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0 2px, transparent 2px 14px); color: var(--ink); font: 17px/1.55 "Segoe UI", system-ui, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+header { text-align: center; margin: 8px 0 20px; }
+header img { width: 104px; height: 104px; border-radius: 24px; box-shadow: 0 0 0 3px var(--edge), 0 8px 24px rgba(255,194,26,.25); }
+h1 { font-size: 42px; line-height: 1.05; margin: 16px 0 6px; letter-spacing: 2px; text-transform: uppercase; color: #fff; text-shadow: 0 0 12px rgba(67,225,255,.55), 0 0 2px #43e1ff; }
+.sub { color: var(--orange); margin: 0; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: 14px; }
+.hazard { height: 8px; margin: 16px auto 0; max-width: 360px; border-radius: 2px; background: repeating-linear-gradient(-45deg, var(--yellow) 0 10px, #111 10px 20px); }
+h2 { font-size: 24px; margin: 30px 0 8px; color: var(--yellow); text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 2px solid var(--edge); padding-bottom: 4px; }
+.lead { font-size: 20px; }
+.card { background: linear-gradient(180deg, #2b3038, var(--plate)); border: 1.5px solid var(--edge); border-radius: 12px; padding: 14px 20px; margin: 20px 0; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+li::marker { color: var(--yellow); }
+a { color: var(--yellow); }
+.lang { float: right; font-size: 14px; }
+.store { display: inline-block; background: linear-gradient(180deg, #ffd34d, var(--yellow)); color: #15181d; font-weight: 800; font-size: 17px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; padding: 14px 24px; border-radius: 10px; box-shadow: 0 4px 0 #b88700; text-align: center; }
+.stores { display: flex; flex-wrap: wrap; gap: 10px 12px; margin: 12px 0; }
+.stores .store { margin: 0 0 4px; }
+footer { margin-top: 48px; color: var(--soft); font-size: 14px; border-top: 1px solid var(--edge); padding-top: 10px; }
+footer a { color: var(--soft); }
+@media (max-width: 480px) { h1 { font-size: 30px; } .stores .store { flex: 1 1 100%; } .lead { font-size: 18px; } }
+
+.shot { text-align: center; margin: 24px 0; }
+.shot img { display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 6px 20px rgba(0,0,0,.45); }
