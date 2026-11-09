@@ -35,3 +35,4 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 🛗 | `lift-v-panelke/` | [Panel House Lift](https://wobqqq.github.io/lift-v-panelke/en/) |
 | 🧣 | `po-pogode/` | [Weather Dress Up](https://wobqqq.github.io/po-pogode/en/) |
 | 🔧 | `garazh-deda/` | [Grandpa’s Garage](https://wobqqq.github.io/garazh-deda/en/) |
+| 🍳 | `skanvordy-kukhnya/` | [Food Scanwords](https://wobqqq.github.io/skanvordy-kukhnya/en/) |

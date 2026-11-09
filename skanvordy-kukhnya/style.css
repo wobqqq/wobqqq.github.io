@@ -1,0 +1,26 @@
+:root { --paper: #f6ecda; --sheet: #fffcf5; --ink: #3b2618; --soft: #6b4a35; --red: #d4553a; --pencil: #4e8a3a; --mustard: #e3a33b; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 "PT Sans", "Segoe UI", system-ui, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+.rule { border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink); height: 5px; margin: 6px 0; }
+header { text-align: center; margin: 8px 0 20px; }
+header img { width: 96px; height: 96px; border-radius: 22px; border: 2px solid var(--ink); box-shadow: 4px 4px 0 rgba(28,26,23,.25); }
+h1 { font-family: "PT Serif", Georgia, "Times New Roman", serif; font-size: 44px; line-height: 1.05; margin: 12px 0 4px; letter-spacing: 1px; text-transform: uppercase; }
+.sub { font-family: "PT Serif", Georgia, serif; font-style: italic; color: var(--soft); margin: 0; }
+.kicker { display: flex; justify-content: space-between; color: var(--red); font: 700 13px/1 "PT Sans Narrow", "Arial Narrow", sans-serif; letter-spacing: 1.6px; text-transform: uppercase; margin: 6px 0 18px; }
+h2 { font-family: "PT Serif", Georgia, serif; font-size: 24px; margin: 30px 0 8px; border-bottom: 1px solid var(--ink); padding-bottom: 4px; }
+.lead { font-size: 20px; }
+.card { background: var(--sheet); border: 1.6px solid var(--ink); border-radius: 14px; padding: 14px 20px; margin: 20px 0; box-shadow: 0 4px 12px rgba(59,38,24,.18); }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+a { color: var(--pencil); }
+.lang { float: right; font-size: 14px; }
+.store { display: inline-block; background: var(--red); color: var(--sheet); font: 700 18px/1 "PT Sans Narrow", "Arial Narrow", sans-serif; letter-spacing: 1.4px; text-transform: uppercase; text-decoration: none; padding: 14px 24px; border: 0; border-radius: 14px; box-shadow: 0 4px 0 #a43a22; margin: 4px 8px 8px 0; text-align: center; }
+.stores { display: flex; flex-wrap: wrap; gap: 10px 12px; margin: 12px 0; }
+.stores .store { margin: 0 0 4px; }
+footer { margin-top: 48px; color: var(--soft); font-size: 14px; border-top: 1px solid var(--ink); padding-top: 10px; }
+@media (max-width: 480px) { h1 { font-size: 32px; } .stores .store { flex: 1 1 100%; } .lead { font-size: 18px; } }
+
+
+.shot { text-align: center; margin: 24px 0; }
+.shot img { max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,.15); }
