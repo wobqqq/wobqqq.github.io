@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "rustore",
- "version": 6,
- "issued": "2026-11-10T09:40:56Z",
- "expires": "2027-11-10T09:40:56Z",
+ "version": 7,
+ "issued": "2026-11-10T09:46:29Z",
+ "expires": "2027-11-10T09:46:29Z",
  "mirrors": [],
  "games": [
   {
@@ -95,6 +95,16 @@
    "age": 0,
    "icon": "florist-eefeb563.webp",
    "sha256": "eefeb5632d650041bdb0aee7d1a0a9ccd783c1ed966dc6f6f336c66edf2c64ba"
+  },
+  {
+   "slug": "slova-otaku",
+   "name": "Otaku Words",
+   "nameRu": "Слова Отаку",
+   "package": "com.otakuwords.game",
+   "genre": "words",
+   "age": 12,
+   "icon": "slova-otaku-cac5ad7b.webp",
+   "sha256": "cac5ad7b0566d7d9d677656a3a4a65cfd1261396e9d1bc8008a27fc3c2a6e87a"
   }
  ]
 }
