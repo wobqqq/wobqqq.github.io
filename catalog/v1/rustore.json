@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "rustore",
- "version": 5,
- "issued": "2026-11-06T16:51:13Z",
- "expires": "2027-11-06T16:51:13Z",
+ "version": 6,
+ "issued": "2026-11-10T09:40:56Z",
+ "expires": "2027-11-10T09:40:56Z",
  "mirrors": [],
  "games": [
   {
@@ -85,6 +85,16 @@
    "age": 0,
    "icon": "kholodilnik-po-polochkam-ed089219.webp",
    "sha256": "ed089219f9c02ba9cea74ac05fe88e51ef1d907ba6f38bec6c41eff46f564dd9"
+  },
+  {
+   "slug": "florist",
+   "name": "Florist",
+   "nameRu": "Флорист",
+   "package": "com.florist.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "florist-eefeb563.webp",
+   "sha256": "eefeb5632d650041bdb0aee7d1a0a9ccd783c1ed966dc6f6f336c66edf2c64ba"
   }
  ]
 }
