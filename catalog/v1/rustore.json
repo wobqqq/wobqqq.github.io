@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "rustore",
- "version": 9,
- "issued": "2026-11-10T18:23:30Z",
- "expires": "2027-11-10T18:23:30Z",
+ "version": 10,
+ "issued": "2026-11-11T18:02:33Z",
+ "expires": "2027-11-11T18:02:33Z",
  "mirrors": [],
  "games": [
   {
@@ -115,6 +115,16 @@
    "age": 0,
    "icon": "kanalizatsiya-99e91e85.webp",
    "sha256": "99e91e85c120d857f048024ecacb8e29874b75812e00f935444d8f14dad381a8"
+  },
+  {
+   "slug": "aviadispetcher",
+   "name": "Air Dispatcher: Landing",
+   "nameRu": "Авиадиспетчер: Посадка",
+   "package": "com.airdispatcher.game",
+   "genre": "arcade",
+   "age": 0,
+   "icon": "aviadispetcher-3c142f53.webp",
+   "sha256": "3c142f530b77c01ba3d9d21927acc6a6c32f476baca027497e960fa344e0c853"
   },
   {
    "slug": "zatyazhnoy-pryzhok",
