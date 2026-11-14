@@ -1,32 +1,21 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 10,
- "issued": "2026-11-11T18:02:33Z",
- "expires": "2027-11-11T18:02:33Z",
+ "version": 11,
+ "issued": "2026-11-14T08:55:32Z",
+ "expires": "2027-11-14T08:55:32Z",
  "mirrors": [],
  "games": [
   {
-   "slug": "bag-of-bags",
-   "name": "Bag of Bags",
-   "nameRu": "Пакет с пакетами",
-   "package": "com.bagofbags.game",
+   "slug": "dveri-zakryvayutsya",
+   "name": "Mind the Doors!",
+   "nameRu": "Осторожно, двери закрываются!",
+   "package": "com.mindthedoors.game",
    "genre": "puzzle",
    "age": 0,
-   "icon": "bag-of-bags-df2319b9.webp",
-   "sha256": "df2319b9f555dda9c38eabd1ba55321806c01066cb1268207b3659e1340bb940",
-   "appGalleryUrl": "https://appgallery.huawei.com/app/C119427897"
-  },
-  {
-   "slug": "zakatki",
-   "name": "Pickle Sort",
-   "nameRu": "Закатки",
-   "package": "com.picklesort.game",
-   "genre": "puzzle",
-   "age": 0,
-   "icon": "zakatki-cadbf5d7.webp",
-   "sha256": "cadbf5d73fa4b1f0d1d2c52e83f49866ba0956df06f0da7204860caec7fbebce",
-   "appGalleryUrl": "https://appgallery.huawei.com/app/C119428039"
+   "icon": "dveri-zakryvayutsya-95c0eac8.webp",
+   "sha256": "95c0eac874d294f5e3df9280084d4a57af9a8b252c443c6865e3d3626f447dd5",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119428067"
   },
   {
    "slug": "kto-menya-zaper",
@@ -40,39 +29,6 @@
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119427693"
   },
   {
-   "slug": "dacha",
-   "name": "My Dacha",
-   "nameRu": "Дача",
-   "package": "com.mydacha.game",
-   "genre": "simulation",
-   "age": 0,
-   "icon": "dacha-d1475e62.webp",
-   "sha256": "d1475e625ae8cdf7b25009eb485e5732bc72a52a550ce2a74db50c4623889da8",
-   "appGalleryUrl": "https://appgallery.huawei.com/app/C119427941"
-  },
-  {
-   "slug": "skanvordy",
-   "name": "Cozy Scanwords and Word Search",
-   "nameRu": "Уютные Сканворды и Филворды",
-   "package": "com.scanwordgames.words",
-   "genre": "words",
-   "age": 0,
-   "icon": "skanvordy-9110d90f.webp",
-   "sha256": "9110d90f99041d7a965eca22a8581aaf30de07a0536e2583fce349ba379a26b6",
-   "appGalleryUrl": "https://appgallery.huawei.com/app/C119427985"
-  },
-  {
-   "slug": "dveri-zakryvayutsya",
-   "name": "Mind the Doors!",
-   "nameRu": "Осторожно, двери закрываются!",
-   "package": "com.mindthedoors.game",
-   "genre": "puzzle",
-   "age": 0,
-   "icon": "dveri-zakryvayutsya-95c0eac8.webp",
-   "sha256": "95c0eac874d294f5e3df9280084d4a57af9a8b252c443c6865e3d3626f447dd5",
-   "appGalleryUrl": "https://appgallery.huawei.com/app/C119428067"
-  },
-  {
    "slug": "fabrika-ulybok",
    "name": "Smile Factory",
    "nameRu": "Фабрика улыбок",
@@ -82,6 +38,17 @@
    "icon": "fabrika-ulybok-12febf65.webp",
    "sha256": "12febf65457c8385285dd21c30a9f71cf40db38901d24932e04d2659f45fb504",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119428149"
+  },
+  {
+   "slug": "bag-of-bags",
+   "name": "Bag of Bags",
+   "nameRu": "Пакет с пакетами",
+   "package": "com.bagofbags.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "bag-of-bags-df2319b9.webp",
+   "sha256": "df2319b9f555dda9c38eabd1ba55321806c01066cb1268207b3659e1340bb940",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119427897"
   },
   {
    "slug": "kholodilnik-po-polochkam",
@@ -95,17 +62,6 @@
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119428199"
   },
   {
-   "slug": "skanvordy-sssr",
-   "name": "Scanwords from the USSR",
-   "nameRu": "Сканворды из СССР",
-   "package": "com.sovietscanwords.game",
-   "genre": "words",
-   "age": 6,
-   "icon": "skanvordy-sssr-8ba98a70.webp",
-   "sha256": "8ba98a7026561d5cf792182787e43f1e75e4c001988eefa3aab69b3d09c50d82",
-   "appGalleryUrl": "https://appgallery.huawei.com/app/C119605979"
-  },
-  {
    "slug": "sortirovochnaya",
    "name": "Sorting Yard",
    "nameRu": "Сортировочная",
@@ -115,6 +71,50 @@
    "icon": "sortirovochnaya-fb33d674.webp",
    "sha256": "fb33d674370f82df20220a6c9d5a7029e2cc002ef6eb8d5b31e765993153c9c4",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119630507"
+  },
+  {
+   "slug": "dacha",
+   "name": "My Dacha",
+   "nameRu": "Дача",
+   "package": "com.mydacha.game",
+   "genre": "simulation",
+   "age": 0,
+   "icon": "dacha-d1475e62.webp",
+   "sha256": "d1475e625ae8cdf7b25009eb485e5732bc72a52a550ce2a74db50c4623889da8",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119427941"
+  },
+  {
+   "slug": "zakatki",
+   "name": "Pickle Sort",
+   "nameRu": "Закатки",
+   "package": "com.picklesort.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "zakatki-cadbf5d7.webp",
+   "sha256": "cadbf5d73fa4b1f0d1d2c52e83f49866ba0956df06f0da7204860caec7fbebce",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119428039"
+  },
+  {
+   "slug": "skanvordy",
+   "name": "Cozy Scanwords and Word Search",
+   "nameRu": "Уютные Сканворды и Филворды",
+   "package": "com.scanwordgames.words",
+   "genre": "words",
+   "age": 0,
+   "icon": "skanvordy-9110d90f.webp",
+   "sha256": "9110d90f99041d7a965eca22a8581aaf30de07a0536e2583fce349ba379a26b6",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119427985"
+  },
+  {
+   "slug": "skanvordy-sssr",
+   "name": "Scanwords from the USSR",
+   "nameRu": "Сканворды из СССР",
+   "package": "com.sovietscanwords.game",
+   "genre": "words",
+   "age": 6,
+   "icon": "skanvordy-sssr-8ba98a70.webp",
+   "sha256": "8ba98a7026561d5cf792182787e43f1e75e4c001988eefa3aab69b3d09c50d82",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119605979"
   }
  ]
 }

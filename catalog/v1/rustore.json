@@ -1,60 +1,20 @@
 {
  "format": 1,
  "store": "rustore",
- "version": 10,
- "issued": "2026-11-11T18:02:33Z",
- "expires": "2027-11-11T18:02:33Z",
+ "version": 11,
+ "issued": "2026-11-14T08:55:32Z",
+ "expires": "2027-11-14T08:55:32Z",
  "mirrors": [],
  "games": [
   {
-   "slug": "bag-of-bags",
-   "name": "Bag of Bags",
-   "nameRu": "Пакет с пакетами",
-   "package": "com.bagofbags.game",
-   "genre": "puzzle",
+   "slug": "zatyazhnoy-pryzhok",
+   "name": "Skydive Hero",
+   "nameRu": "Затяжной прыжок",
+   "package": "com.skydivehero.game",
+   "genre": "arcade",
    "age": 0,
-   "icon": "bag-of-bags-df2319b9.webp",
-   "sha256": "df2319b9f555dda9c38eabd1ba55321806c01066cb1268207b3659e1340bb940"
-  },
-  {
-   "slug": "zakatki",
-   "name": "Pickle Sort",
-   "nameRu": "Закатки",
-   "package": "com.picklesort.game",
-   "genre": "puzzle",
-   "age": 0,
-   "icon": "zakatki-cadbf5d7.webp",
-   "sha256": "cadbf5d73fa4b1f0d1d2c52e83f49866ba0956df06f0da7204860caec7fbebce"
-  },
-  {
-   "slug": "kto-menya-zaper",
-   "name": "Who Blocked Me?",
-   "nameRu": "Кто меня запер?",
-   "package": "com.whoblockedme.game",
-   "genre": "puzzle",
-   "age": 0,
-   "icon": "kto-menya-zaper-3b0dd53f.webp",
-   "sha256": "3b0dd53f0c11bed0359f8a8963536066af144a2bbba677d9ab4402c624a6b31c"
-  },
-  {
-   "slug": "dacha",
-   "name": "My Dacha",
-   "nameRu": "Дача",
-   "package": "com.mydacha.game",
-   "genre": "simulation",
-   "age": 0,
-   "icon": "dacha-d1475e62.webp",
-   "sha256": "d1475e625ae8cdf7b25009eb485e5732bc72a52a550ce2a74db50c4623889da8"
-  },
-  {
-   "slug": "skanvordy",
-   "name": "Cozy Scanwords and Word Search",
-   "nameRu": "Уютные Сканворды и Филворды",
-   "package": "com.scanwordgames.words",
-   "genre": "words",
-   "age": 0,
-   "icon": "skanvordy-9110d90f.webp",
-   "sha256": "9110d90f99041d7a965eca22a8581aaf30de07a0536e2583fce349ba379a26b6"
+   "icon": "zatyazhnoy-pryzhok-a2f03bb0.webp",
+   "sha256": "a2f03bb05988642b7e7c27e8a6e61fe4ee0b86427ff1d869ee834a068dacce05"
   },
   {
    "slug": "dveri-zakryvayutsya",
@@ -67,26 +27,6 @@
    "sha256": "95c0eac874d294f5e3df9280084d4a57af9a8b252c443c6865e3d3626f447dd5"
   },
   {
-   "slug": "fabrika-ulybok",
-   "name": "Smile Factory",
-   "nameRu": "Фабрика улыбок",
-   "package": "com.smilefactory.game",
-   "genre": "puzzle",
-   "age": 0,
-   "icon": "fabrika-ulybok-12febf65.webp",
-   "sha256": "12febf65457c8385285dd21c30a9f71cf40db38901d24932e04d2659f45fb504"
-  },
-  {
-   "slug": "kholodilnik-po-polochkam",
-   "name": "Tidy Fridge",
-   "nameRu": "Холодильник по полочкам",
-   "package": "com.tidyfridge.game",
-   "genre": "puzzle",
-   "age": 0,
-   "icon": "kholodilnik-po-polochkam-ed089219.webp",
-   "sha256": "ed089219f9c02ba9cea74ac05fe88e51ef1d907ba6f38bec6c41eff46f564dd9"
-  },
-  {
    "slug": "florist",
    "name": "Florist",
    "nameRu": "Флорист",
@@ -95,16 +35,6 @@
    "age": 0,
    "icon": "florist-eefeb563.webp",
    "sha256": "eefeb5632d650041bdb0aee7d1a0a9ccd783c1ed966dc6f6f336c66edf2c64ba"
-  },
-  {
-   "slug": "slova-otaku",
-   "name": "Otaku Words",
-   "nameRu": "Слова Отаку",
-   "package": "com.otakuwords.game",
-   "genre": "words",
-   "age": 12,
-   "icon": "slova-otaku-cac5ad7b.webp",
-   "sha256": "cac5ad7b0566d7d9d677656a3a4a65cfd1261396e9d1bc8008a27fc3c2a6e87a"
   },
   {
    "slug": "kanalizatsiya",
@@ -117,6 +47,66 @@
    "sha256": "99e91e85c120d857f048024ecacb8e29874b75812e00f935444d8f14dad381a8"
   },
   {
+   "slug": "kto-menya-zaper",
+   "name": "Who Blocked Me?",
+   "nameRu": "Кто меня запер?",
+   "package": "com.whoblockedme.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "kto-menya-zaper-3b0dd53f.webp",
+   "sha256": "3b0dd53f0c11bed0359f8a8963536066af144a2bbba677d9ab4402c624a6b31c"
+  },
+  {
+   "slug": "fabrika-ulybok",
+   "name": "Smile Factory",
+   "nameRu": "Фабрика улыбок",
+   "package": "com.smilefactory.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "fabrika-ulybok-12febf65.webp",
+   "sha256": "12febf65457c8385285dd21c30a9f71cf40db38901d24932e04d2659f45fb504"
+  },
+  {
+   "slug": "bag-of-bags",
+   "name": "Bag of Bags",
+   "nameRu": "Пакет с пакетами",
+   "package": "com.bagofbags.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "bag-of-bags-df2319b9.webp",
+   "sha256": "df2319b9f555dda9c38eabd1ba55321806c01066cb1268207b3659e1340bb940"
+  },
+  {
+   "slug": "kholodilnik-po-polochkam",
+   "name": "Tidy Fridge",
+   "nameRu": "Холодильник по полочкам",
+   "package": "com.tidyfridge.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "kholodilnik-po-polochkam-ed089219.webp",
+   "sha256": "ed089219f9c02ba9cea74ac05fe88e51ef1d907ba6f38bec6c41eff46f564dd9"
+  },
+  {
+   "slug": "dacha",
+   "name": "My Dacha",
+   "nameRu": "Дача",
+   "package": "com.mydacha.game",
+   "genre": "simulation",
+   "age": 0,
+   "icon": "dacha-d1475e62.webp",
+   "sha256": "d1475e625ae8cdf7b25009eb485e5732bc72a52a550ce2a74db50c4623889da8"
+  },
+  {
+   "slug": "zakatki",
+   "name": "Pickle Sort",
+   "nameRu": "Закатки",
+   "package": "com.picklesort.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "zakatki-cadbf5d7.webp",
+   "sha256": "cadbf5d73fa4b1f0d1d2c52e83f49866ba0956df06f0da7204860caec7fbebce"
+  },
+  {
    "slug": "aviadispetcher",
    "name": "Air Dispatcher: Landing",
    "nameRu": "Авиадиспетчер: Посадка",
@@ -127,14 +117,24 @@
    "sha256": "3c142f530b77c01ba3d9d21927acc6a6c32f476baca027497e960fa344e0c853"
   },
   {
-   "slug": "zatyazhnoy-pryzhok",
-   "name": "Skydive Hero",
-   "nameRu": "Затяжной прыжок",
-   "package": "com.skydivehero.game",
-   "genre": "arcade",
+   "slug": "skanvordy",
+   "name": "Cozy Scanwords and Word Search",
+   "nameRu": "Уютные Сканворды и Филворды",
+   "package": "com.scanwordgames.words",
+   "genre": "words",
    "age": 0,
-   "icon": "zatyazhnoy-pryzhok-a2f03bb0.webp",
-   "sha256": "a2f03bb05988642b7e7c27e8a6e61fe4ee0b86427ff1d869ee834a068dacce05"
+   "icon": "skanvordy-9110d90f.webp",
+   "sha256": "9110d90f99041d7a965eca22a8581aaf30de07a0536e2583fce349ba379a26b6"
+  },
+  {
+   "slug": "slova-otaku",
+   "name": "Otaku Words",
+   "nameRu": "Слова Отаку",
+   "package": "com.otakuwords.game",
+   "genre": "words",
+   "age": 12,
+   "icon": "slova-otaku-cac5ad7b.webp",
+   "sha256": "cac5ad7b0566d7d9d677656a3a4a65cfd1261396e9d1bc8008a27fc3c2a6e87a"
   }
  ]
 }
