@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 12,
- "issued": "2026-11-17T13:38:53Z",
- "expires": "2027-11-17T13:38:53Z",
+ "version": 13,
+ "issued": "2026-11-17T15:04:51Z",
+ "expires": "2027-11-17T15:04:51Z",
  "mirrors": [],
  "games": [
   {
@@ -115,6 +115,17 @@
    "icon": "zakatki-cadbf5d7.webp",
    "sha256": "cadbf5d73fa4b1f0d1d2c52e83f49866ba0956df06f0da7204860caec7fbebce",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119428039"
+  },
+  {
+   "slug": "aviadispetcher",
+   "name": "Air Dispatcher: Landing",
+   "nameRu": "Авиадиспетчер: Посадка",
+   "package": "com.airdispatcher.game",
+   "genre": "arcade",
+   "age": 0,
+   "icon": "aviadispetcher-3c142f53.webp",
+   "sha256": "3c142f530b77c01ba3d9d21927acc6a6c32f476baca027497e960fa344e0c853",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119605867"
   },
   {
    "slug": "skanvordy",
