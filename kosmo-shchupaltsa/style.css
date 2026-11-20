@@ -1,0 +1,22 @@
+:root { --bg: #070a1c; --card: #141b3d; --ink: #e8f4ff; --soft: #9fb4e0; --accent: #62e6ff; --sunny: #ffffff; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(ellipse at 20% 0%, #2a1660 0%, transparent 55%), radial-gradient(ellipse at 90% 100%, #0e3a6e 0%, transparent 50%), var(--bg); background-attachment: fixed; color: var(--ink); font: 17px/1.55 "Rubik", system-ui, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 72px; height: 72px; border-radius: 18px; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0; text-shadow: 0 0 18px rgba(47,184,255,.7); }
+h2 { color: var(--accent); font-size: 22px; margin: 32px 0 8px; }
+.lead { font-size: 20px; }
+.card { background: var(--card); border-radius: 20px; padding: 16px 20px; margin: 20px 0; border: 1px solid rgba(98,230,255,.35); box-shadow: 0 0 24px rgba(47,184,255,.18); }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+a { color: var(--accent); }
+.lang { float: right; font-size: 14px; }
+footer { margin-top: 48px; color: var(--soft); font-size: 14px; }
+@media (max-width: 480px) { h1 { font-size: 27px; } .lead { font-size: 18px; } }
+.store { display: inline-block; background: linear-gradient(90deg, #2fb8ff, #b05cff); color: var(--sunny); box-shadow: 0 0 18px rgba(47,184,255,.45); font-weight: 700; text-decoration: none; padding: 12px 24px; border-radius: 999px; }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; }
+.stores .store { text-align: center; }
+@media (max-width: 480px) { .stores .store { flex: 1 1 100%; } }
+.shot { text-align: center; margin: 24px 0; }
+.shot img { display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,.15); }
