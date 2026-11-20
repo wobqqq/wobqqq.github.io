@@ -1,11 +1,21 @@
 {
  "format": 1,
  "store": "rustore",
- "version": 14,
- "issued": "2026-11-18T08:00:14Z",
- "expires": "2027-11-18T08:00:14Z",
+ "version": 15,
+ "issued": "2026-11-20T10:51:39Z",
+ "expires": "2027-11-20T10:51:39Z",
  "mirrors": [],
  "games": [
+  {
+   "slug": "stalnoy-front",
+   "name": "Steel Front",
+   "nameRu": "Стальной фронт",
+   "package": "com.steelfront.game",
+   "genre": "strategy",
+   "age": 12,
+   "icon": "stalnoy-front-964b801c.webp",
+   "sha256": "964b801c0bcb20ef900a7a79eae23c984e101e91214b6d8a066805fe0d8060f5"
+  },
   {
    "slug": "zatyazhnoy-pryzhok",
    "name": "Skydive Hero",
