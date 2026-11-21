@@ -10,6 +10,13 @@ import sys
 SITE = pathlib.Path(sys.argv[1])
 GH = 'https://github.com/wobqqq/'
 STUDIO = 'https://wobqqq.github.io/cat-and-duck-studio/'
+# The studio's channels and store developer pages, shown under the studio card.
+STUDIO_LINKS = [
+    ('📺', 'YouTube', 'https://www.youtube.com/@CatAndDuckGames'),
+    ('▶️', 'VK Video', 'https://vkvideo.ru/@club242343168'),
+    ('🛒', 'RuStore', 'https://www.rustore.ru/catalog/developer/56wj6b'),
+    ('🛍️', 'AppGallery', 'https://appgallery.huawei.com/tab/appdetailCommon%7CC119427897%7Cautomore%7Cdoublecolumncardwithstar%7C903547'),
+]
 GAMES = ['bag-of-bags', 'zakatki', 'kto-menya-zaper', 'dacha', 'skanvordy', 'dveri-zakryvayutsya', 'fabrika-ulybok', 'kholodilnik-po-polochkam', 'florist', 'skanvordy-sssr', 'skanvordy-18', 'slova-otaku', 'kanalizatsiya', 'aviadispetcher', 'zatyazhnoy-pryzhok', 'epokha-znamen', 'stalnoy-front', 'okopnyy-front', 'sortirovochnaya', 'tihaya-ohota', 'peremotka-90', 'kot-na-klave', 'klass-13', 'banny-den', 'lift-v-panelke', 'po-pogode', 'garazh-deda', 'skanvordy-kukhnya', 'skanvordy-avto']
 
 MONO = '''<svg class="mono" viewBox="0 0 64 64" aria-hidden="true">
@@ -132,6 +139,9 @@ a { color: var(--a1); }
 .btn.primary { background: linear-gradient(90deg, var(--a1), var(--a2)); color: #fff; }
 .btn svg { width: 18px; height: 18px; fill: currentColor; }
 .where { color: var(--soft); font-size: 15px; margin-top: 14px; }
+.studio-links { display: flex; flex-wrap: wrap; gap: 8px; margin: -40px 0 52px; }
+.studio-links a { display: inline-flex; gap: 6px; align-items: center; padding: 7px 14px; border-radius: 999px; background: #fff3e4; color: #6b5444; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 2px 6px rgba(90, 55, 20, .12); }
+.studio-links a:hover { color: #b5481a; }
 .studio { display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center; padding: 26px; border-radius: 28px; margin: 12px 0 52px; text-decoration: none; color: #2d241c;
   background: radial-gradient(circle at 90% 10%, rgba(255, 210, 90, .7), transparent 45%), linear-gradient(120deg, #ffe7c2, #ffd9a8); box-shadow: 0 18px 40px rgba(242, 153, 74, .25); transition: transform .18s; }
 .studio:hover { transform: translateY(-3px); }
@@ -231,6 +241,7 @@ def page(lang):
   <div><p class="kicker">{t['studio_kicker']}</p><h2>Cat &amp; Duck Studio</h2><p>{t['studio_text']}</p><div class="icons">{icons}<span>{len(GAMES)} {t['games']}</span></div></div>
   <span class="go">{t['studio_btn']} →</span>
 </a>
+<nav class="studio-links" aria-label="Cat &amp; Duck Studio">{''.join(f'<a href="{u}" target="_blank" rel="noopener">{e} {n}</a>' for e, n, u in STUDIO_LINKS)}</nav>
 <h2 class="sec">{t['oss']}</h2>
 <p class="sec">{t['oss_lead']}</p>
 <ul class="grid">
