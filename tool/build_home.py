@@ -12,7 +12,6 @@ GH = 'https://github.com/wobqqq/'
 STUDIO = 'https://wobqqq.github.io/cat-and-duck-studio/'
 # The studio's channels and store developer pages, shown under the studio card.
 STUDIO_LINKS = [
-    ('📺', 'YouTube', 'https://www.youtube.com/@CatAndDuckGames'),
     ('▶️', 'VK Video', 'https://vkvideo.ru/@club242343168'),
     ('🛒', 'RuStore', 'https://www.rustore.ru/catalog/developer/56wj6b'),
     ('🛍️', 'AppGallery', 'https://appgallery.huawei.com/tab/appdetailCommon%7CC119427897%7Cautomore%7Cdoublecolumncardwithstar%7C903547'),
