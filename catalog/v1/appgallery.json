@@ -1,11 +1,22 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 15,
- "issued": "2026-11-20T10:51:39Z",
- "expires": "2027-11-20T10:51:39Z",
+ "version": 16,
+ "issued": "2026-11-24T08:14:18Z",
+ "expires": "2027-11-24T08:14:18Z",
  "mirrors": [],
  "games": [
+  {
+   "slug": "epokha-znamen",
+   "name": "Epoch of Banners",
+   "nameRu": "Эпоха знамён",
+   "package": "com.epochofbanners.game",
+   "genre": "strategy",
+   "age": 12,
+   "icon": "epokha-znamen-4ac88c8a.webp",
+   "sha256": "4ac88c8a0978c4d95bed5f29e73c9e67b399350337de6e9a5127495393e589ad",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119871607"
+  },
   {
    "slug": "stalnoy-front",
    "name": "Steel Front",
