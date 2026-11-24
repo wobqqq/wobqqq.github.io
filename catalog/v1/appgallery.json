@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 17,
- "issued": "2026-11-24T09:14:21Z",
- "expires": "2027-11-24T09:14:21Z",
+ "version": 18,
+ "issued": "2026-11-24T09:28:22Z",
+ "expires": "2027-11-24T09:28:22Z",
  "mirrors": [],
  "games": [
   {
@@ -27,6 +27,17 @@
    "icon": "stalnoy-front-964b801c.webp",
    "sha256": "964b801c0bcb20ef900a7a79eae23c984e101e91214b6d8a066805fe0d8060f5",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119720981"
+  },
+  {
+   "slug": "po-pogode",
+   "name": "Weather Dress Up",
+   "nameRu": "По погоде",
+   "package": "com.weatherdressup.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "po-pogode-7fb63700.webp",
+   "sha256": "7fb637000d2f020d4327b968a07469d2b3e37832b1c4ea8e1055ce6e12900649",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119830089"
   },
   {
    "slug": "dveri-zakryvayutsya",
