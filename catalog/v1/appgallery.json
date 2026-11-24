@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 20,
- "issued": "2026-11-24T10:27:31Z",
- "expires": "2027-11-24T10:27:31Z",
+ "version": 21,
+ "issued": "2026-11-24T11:23:36Z",
+ "expires": "2027-11-24T11:23:36Z",
  "mirrors": [],
  "games": [
   {
@@ -60,6 +60,17 @@
    "icon": "lift-v-panelke-13dc155b.webp",
    "sha256": "13dc155b81d511e06aed397915069c91cfb348e8300755e3df166b16c7bf677c",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119830785"
+  },
+  {
+   "slug": "kot-na-klave",
+   "name": "Cat on Keyboard",
+   "nameRu": "Кот на клаве",
+   "package": "com.catonkeyboard.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "kot-na-klave-93e8faf4.webp",
+   "sha256": "93e8faf4649871ef3b147038d4b9c37d85749f5903503e85953ad2b3ff2ca22d",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119830293"
   },
   {
    "slug": "dveri-zakryvayutsya",
@@ -236,6 +247,17 @@
    "icon": "slova-otaku-cac5ad7b.webp",
    "sha256": "cac5ad7b0566d7d9d677656a3a4a65cfd1261396e9d1bc8008a27fc3c2a6e87a",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119605815"
+  },
+  {
+   "slug": "skanvordy-avto",
+   "name": "Car Scanwords",
+   "nameRu": "Авто Сканворды",
+   "package": "com.carscanwords.game",
+   "genre": "words",
+   "age": 6,
+   "icon": "skanvordy-avto-80267f9c.webp",
+   "sha256": "80267f9c880646148a966456971fb1e116e913cf25f87e54cd529956a2250db0",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119835957"
   }
  ]
 }
