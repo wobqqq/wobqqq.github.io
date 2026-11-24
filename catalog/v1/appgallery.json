@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 18,
- "issued": "2026-11-24T09:28:22Z",
- "expires": "2027-11-24T09:28:22Z",
+ "version": 19,
+ "issued": "2026-11-24T09:35:58Z",
+ "expires": "2027-11-24T09:35:58Z",
  "mirrors": [],
  "games": [
   {
@@ -38,6 +38,17 @@
    "icon": "po-pogode-7fb63700.webp",
    "sha256": "7fb637000d2f020d4327b968a07469d2b3e37832b1c4ea8e1055ce6e12900649",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119830089"
+  },
+  {
+   "slug": "peremotka-90",
+   "name": "90s Rewind",
+   "nameRu": "Перемотка девяностых",
+   "package": "com.rewind90s.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "peremotka-90-3b00d790.webp",
+   "sha256": "3b00d79011634529458edeaa4078bf90bfec7c08f55ffc82ee144ccae0bba0d1",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119829613"
   },
   {
    "slug": "dveri-zakryvayutsya",
