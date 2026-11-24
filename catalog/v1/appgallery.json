@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 19,
- "issued": "2026-11-24T09:35:58Z",
- "expires": "2027-11-24T09:35:58Z",
+ "version": 20,
+ "issued": "2026-11-24T10:27:31Z",
+ "expires": "2027-11-24T10:27:31Z",
  "mirrors": [],
  "games": [
   {
@@ -49,6 +49,17 @@
    "icon": "peremotka-90-3b00d790.webp",
    "sha256": "3b00d79011634529458edeaa4078bf90bfec7c08f55ffc82ee144ccae0bba0d1",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119829613"
+  },
+  {
+   "slug": "lift-v-panelke",
+   "name": "Panel House Lift",
+   "nameRu": "Лифт в панельке",
+   "package": "com.panelhouselift.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "lift-v-panelke-13dc155b.webp",
+   "sha256": "13dc155b81d511e06aed397915069c91cfb348e8300755e3df166b16c7bf677c",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119830785"
   },
   {
    "slug": "dveri-zakryvayutsya",
