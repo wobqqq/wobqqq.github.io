@@ -17,7 +17,7 @@ STUDIO_LINKS = [
     ('🛒', 'RuStore', 'https://www.rustore.ru/catalog/developer/56wj6b'),
     ('🛍️', 'AppGallery', 'https://appgallery.huawei.com/tab/appdetailCommon%7CC119427897%7Cautomore%7Cdoublecolumncardwithstar%7C903547'),
 ]
-GAMES = ['bag-of-bags', 'zakatki', 'kto-menya-zaper', 'dacha', 'skanvordy', 'dveri-zakryvayutsya', 'fabrika-ulybok', 'kholodilnik-po-polochkam', 'florist', 'skanvordy-sssr', 'skanvordy-18', 'slova-otaku', 'kanalizatsiya', 'aviadispetcher', 'zatyazhnoy-pryzhok', 'epokha-znamen', 'stalnoy-front', 'okopnyy-front', 'sortirovochnaya', 'tihaya-ohota', 'peremotka-90', 'kot-na-klave', 'klass-13', 'banny-den', 'lift-v-panelke', 'po-pogode', 'garazh-deda', 'skanvordy-kukhnya', 'skanvordy-avto', 'kosmo-shchupaltsa']
+GAMES = ['bag-of-bags', 'zakatki', 'kto-menya-zaper', 'dacha', 'skanvordy', 'dveri-zakryvayutsya', 'fabrika-ulybok', 'kholodilnik-po-polochkam', 'florist', 'skanvordy-sssr', 'skanvordy-18', 'slova-otaku', 'kanalizatsiya', 'aviadispetcher', 'zatyazhnoy-pryzhok', 'epokha-znamen', 'stalnoy-front', 'okopnyy-front', 'sortirovochnaya', 'tihaya-ohota', 'peremotka-90', 'kot-na-klave', 'klass-13', 'banny-den', 'lift-v-panelke', 'po-pogode', 'garazh-deda', 'skanvordy-kukhnya', 'skanvordy-avto', 'kosmo-shchupaltsa', 'kotopulta']
 
 MONO = '''<svg class="mono" viewBox="0 0 64 64" aria-hidden="true">
   <defs>
