@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 21,
- "issued": "2026-11-24T11:23:36Z",
- "expires": "2027-11-24T11:23:36Z",
+ "version": 22,
+ "issued": "2026-11-24T13:38:56Z",
+ "expires": "2027-11-24T13:38:56Z",
  "mirrors": [],
  "games": [
   {
@@ -258,6 +258,17 @@
    "icon": "skanvordy-avto-80267f9c.webp",
    "sha256": "80267f9c880646148a966456971fb1e116e913cf25f87e54cd529956a2250db0",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119835957"
+  },
+  {
+   "slug": "skanvordy-kukhnya",
+   "name": "Food Scanwords",
+   "nameRu": "Кулинарные сканворды",
+   "package": "com.foodscanwords.game",
+   "genre": "words",
+   "age": 0,
+   "icon": "skanvordy-kukhnya-9f667853.webp",
+   "sha256": "9f667853ecc677e2eda2e58ff799a7cf96b7f34d5c8ebd3337260119f6751ed8",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119835571"
   }
  ]
 }
