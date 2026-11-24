@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 16,
- "issued": "2026-11-24T08:14:18Z",
- "expires": "2027-11-24T08:14:18Z",
+ "version": 17,
+ "issued": "2026-11-24T09:14:21Z",
+ "expires": "2027-11-24T09:14:21Z",
  "mirrors": [],
  "games": [
   {
@@ -106,6 +106,17 @@
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119428199"
   },
   {
+   "slug": "banny-den",
+   "name": "Bathhouse Master",
+   "nameRu": "Банный день",
+   "package": "com.bathhousemaster.game",
+   "genre": "simulation",
+   "age": 0,
+   "icon": "banny-den-61570a47.webp",
+   "sha256": "61570a47ba649a1c69e09d7c76168f8b0eb536b12af7ee0ddf3ba2090aaaaa3a",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119831133"
+  },
+  {
    "slug": "sortirovochnaya",
    "name": "Sorting Yard",
    "nameRu": "Сортировочная",
@@ -115,6 +126,17 @@
    "icon": "sortirovochnaya-fb33d674.webp",
    "sha256": "fb33d674370f82df20220a6c9d5a7029e2cc002ef6eb8d5b31e765993153c9c4",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119630507"
+  },
+  {
+   "slug": "garazh-deda",
+   "name": "Grandpa’s Garage",
+   "nameRu": "Гараж деда",
+   "package": "com.grandpasgarage.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "garazh-deda-2d3cf869.webp",
+   "sha256": "2d3cf869b06bddf29153c8cc7db321e7cdcede2785b7652a2347243bd5a75577",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119835181"
   },
   {
    "slug": "dacha",
