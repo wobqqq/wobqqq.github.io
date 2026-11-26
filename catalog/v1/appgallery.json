@@ -1,9 +1,9 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 22,
- "issued": "2026-11-24T13:38:56Z",
- "expires": "2027-11-24T13:38:56Z",
+ "version": 23,
+ "issued": "2026-11-26T08:23:16Z",
+ "expires": "2027-11-26T08:23:16Z",
  "mirrors": [],
  "games": [
   {
@@ -73,6 +73,17 @@
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119830293"
   },
   {
+   "slug": "zatyazhnoy-pryzhok",
+   "name": "Skydive Hero",
+   "nameRu": "Затяжной прыжок",
+   "package": "com.skydivehero.game",
+   "genre": "arcade",
+   "age": 0,
+   "icon": "zatyazhnoy-pryzhok-a2f03bb0.webp",
+   "sha256": "a2f03bb05988642b7e7c27e8a6e61fe4ee0b86427ff1d869ee834a068dacce05",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119605755"
+  },
+  {
    "slug": "dveri-zakryvayutsya",
    "name": "Mind the Doors!",
    "nameRu": "Осторожно, двери закрываются!",
@@ -82,6 +93,17 @@
    "icon": "dveri-zakryvayutsya-95c0eac8.webp",
    "sha256": "95c0eac874d294f5e3df9280084d4a57af9a8b252c443c6865e3d3626f447dd5",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119428067"
+  },
+  {
+   "slug": "tihaya-ohota",
+   "name": "Mushroom Picker",
+   "nameRu": "Тихая Охота",
+   "package": "com.tihayaohota.game",
+   "genre": "puzzle",
+   "age": 0,
+   "icon": "tihaya-ohota-587577d9.webp",
+   "sha256": "587577d9458c5951b9b57de3a313a7ca72306fc4ec9410fc53a11d8da9d5f8b8",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119721615"
   },
   {
    "slug": "florist",
@@ -269,6 +291,17 @@
    "icon": "skanvordy-kukhnya-9f667853.webp",
    "sha256": "9f667853ecc677e2eda2e58ff799a7cf96b7f34d5c8ebd3337260119f6751ed8",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119835571"
+  },
+  {
+   "slug": "kosmo-shchupaltsa",
+   "name": "Cosmo Tentacles",
+   "nameRu": "Космо Щупальца",
+   "package": "com.cosmotentacles.game",
+   "genre": "arcade",
+   "age": 6,
+   "icon": "kosmo-shchupaltsa-06dbc7c1.webp",
+   "sha256": "06dbc7c13d686c633bda61fcc6e74f2db73b4049f5d0913294fbe9928d074fbf",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119935443"
   }
  ]
 }
