@@ -1,0 +1,78 @@
+/* Cult: Global Domination: the game's own look, black obsidian glass, ultraviolet neon, wax amber. */
+@font-face { font-family: "Kult Title"; src: url("fonts/CormorantSC-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Kult Text"; src: url("fonts/PTSansNarrow-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Kult Text"; src: url("fonts/PTSansNarrow-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+:root {
+  --bg: #07060d; --glass: #15121f; --facet: #2b2740; --ink: #ede8da; --soft: #a9a3c2;
+  --accent: #b79cff; --violet: #8b5cff; --amber: #f0a23b; --wax: #ffd08a; --cyan: #7fd8ff;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0; min-height: 100vh; color: var(--ink);
+  font: 19px/1.55 "Kult Text", "PT Sans Narrow", "Arial Narrow", system-ui, sans-serif;
+  background:
+    radial-gradient(ellipse 80% 45% at 50% -8%, rgba(139, 92, 255, .30), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(240, 162, 59, .08), transparent 70%),
+    radial-gradient(1px 1px at 12% 18%, rgba(237, 232, 255, .55), transparent 60%),
+    radial-gradient(1px 1px at 78% 9%, rgba(237, 232, 255, .45), transparent 60%),
+    radial-gradient(1.5px 1.5px at 64% 31%, rgba(127, 216, 255, .5), transparent 60%),
+    radial-gradient(1px 1px at 33% 42%, rgba(237, 232, 255, .35), transparent 60%),
+    radial-gradient(1px 1px at 90% 55%, rgba(183, 156, 255, .5), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+}
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 18px; margin-bottom: 24px; }
+header img { width: 80px; height: 80px; border-radius: 20px; flex: none; box-shadow: 0 0 0 1px rgba(183, 156, 255, .45), 0 0 28px rgba(139, 92, 255, .55); }
+h1, h2 { font-family: "Kult Title", "Cormorant SC", Georgia, serif; font-weight: 700; letter-spacing: .02em; }
+h1 { font-size: 38px; line-height: 1.1; margin: 0; color: #f4f0ff; text-shadow: 0 0 18px rgba(139, 92, 255, .75), 0 0 2px rgba(183, 156, 255, .9); }
+h2 { color: var(--amber); font-size: 26px; margin: 34px 0 8px; text-shadow: 0 0 14px rgba(240, 162, 59, .35); }
+p { margin: 0 0 14px; }
+.lead { font-size: 22px; color: var(--wax); }
+.card {
+  background: linear-gradient(160deg, rgba(36, 31, 54, .92), rgba(21, 18, 31, .92));
+  border: 1px solid rgba(139, 92, 255, .45); border-radius: 18px; padding: 16px 22px; margin: 22px 0;
+  box-shadow: 0 0 0 1px rgba(7, 6, 13, .8), 0 0 26px rgba(139, 92, 255, .22), inset 0 1px 0 rgba(237, 232, 255, .06);
+}
+ul { padding-left: 20px; margin: 0; }
+li { margin: 8px 0; }
+li::marker { color: var(--violet); }
+li b { color: var(--accent); }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { color: var(--cyan); }
+.lang { float: right; font-size: 15px; margin-left: 12px; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--facet); color: var(--soft); font-size: 15px; }
+.store {
+  display: inline-block; color: #fff8ec; font-weight: 700; text-decoration: none; padding: 13px 26px; border-radius: 999px;
+  background: linear-gradient(180deg, #9d70ff, #6a3bf0); border: 1px solid rgba(237, 232, 255, .35);
+  box-shadow: 0 0 22px rgba(139, 92, 255, .55), inset 0 1px 0 rgba(255, 255, 255, .25);
+}
+.store:hover { color: #fff; box-shadow: 0 0 30px rgba(139, 92, 255, .85), inset 0 1px 0 rgba(255, 255, 255, .3); }
+.store + .store { background: linear-gradient(180deg, #f6b95c, #c9761d); color: #1b1006; box-shadow: 0 0 22px rgba(240, 162, 59, .45), inset 0 1px 0 rgba(255, 255, 255, .35); }
+.store + .store:hover { color: #000; box-shadow: 0 0 30px rgba(240, 162, 59, .7), inset 0 1px 0 rgba(255, 255, 255, .4); }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; }
+.stores .store { text-align: center; }
+.shot { text-align: center; margin: 24px 0; }
+.shot img { display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 16px; border: 1px solid rgba(139, 92, 255, .5); box-shadow: 0 0 30px rgba(139, 92, 255, .35); }
+/* TODO(site): a stand-in until shot_ru.jpg / shot_en.jpg (640x360) exist; replace the .shot-todo block with the <img>. */
+.shot-todo {
+  position: relative; width: 640px; max-width: 100%; aspect-ratio: 16 / 9; margin: 0 auto; border-radius: 16px; overflow: hidden;
+  border: 1px solid rgba(139, 92, 255, .5); box-shadow: 0 0 30px rgba(139, 92, 255, .35);
+  background:
+    radial-gradient(circle at 50% 118%, rgba(139, 92, 255, .55) 0 38%, rgba(139, 92, 255, .12) 52%, transparent 62%),
+    radial-gradient(2px 2px at 28% 70%, var(--wax), transparent 70%),
+    radial-gradient(2px 2px at 44% 62%, var(--accent), transparent 70%),
+    radial-gradient(2px 2px at 61% 66%, var(--accent), transparent 70%),
+    radial-gradient(2px 2px at 72% 74%, var(--wax), transparent 70%),
+    radial-gradient(1px 1px at 18% 22%, #fff, transparent 70%),
+    radial-gradient(1px 1px at 84% 30%, #fff, transparent 70%),
+    linear-gradient(180deg, #0c0a14, #15121f);
+}
+.shot-todo span { position: absolute; left: 0; right: 0; top: 30%; text-align: center; font-family: "Kult Title", Georgia, serif; font-size: 26px; color: #f4f0ff; text-shadow: 0 0 16px rgba(139, 92, 255, .9); padding: 0 16px; }
+@media (max-width: 480px) {
+  h1 { font-size: 29px; } .lead { font-size: 20px; } h2 { font-size: 23px; }
+  header img { width: 64px; height: 64px; border-radius: 16px; }
+  .stores .store { flex: 1 1 100%; }
+  .shot-todo span { font-size: 20px; }
+}
