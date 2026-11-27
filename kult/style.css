@@ -55,24 +55,8 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--facet)
 .stores .store { text-align: center; }
 .shot { text-align: center; margin: 24px 0; }
 .shot img { display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 16px; border: 1px solid rgba(139, 92, 255, .5); box-shadow: 0 0 30px rgba(139, 92, 255, .35); }
-/* TODO(site): a stand-in until shot_ru.jpg / shot_en.jpg (640x360) exist; replace the .shot-todo block with the <img>. */
-.shot-todo {
-  position: relative; width: 640px; max-width: 100%; aspect-ratio: 16 / 9; margin: 0 auto; border-radius: 16px; overflow: hidden;
-  border: 1px solid rgba(139, 92, 255, .5); box-shadow: 0 0 30px rgba(139, 92, 255, .35);
-  background:
-    radial-gradient(circle at 50% 118%, rgba(139, 92, 255, .55) 0 38%, rgba(139, 92, 255, .12) 52%, transparent 62%),
-    radial-gradient(2px 2px at 28% 70%, var(--wax), transparent 70%),
-    radial-gradient(2px 2px at 44% 62%, var(--accent), transparent 70%),
-    radial-gradient(2px 2px at 61% 66%, var(--accent), transparent 70%),
-    radial-gradient(2px 2px at 72% 74%, var(--wax), transparent 70%),
-    radial-gradient(1px 1px at 18% 22%, #fff, transparent 70%),
-    radial-gradient(1px 1px at 84% 30%, #fff, transparent 70%),
-    linear-gradient(180deg, #0c0a14, #15121f);
-}
-.shot-todo span { position: absolute; left: 0; right: 0; top: 30%; text-align: center; font-family: "Kult Title", Georgia, serif; font-size: 26px; color: #f4f0ff; text-shadow: 0 0 16px rgba(139, 92, 255, .9); padding: 0 16px; }
 @media (max-width: 480px) {
   h1 { font-size: 29px; } .lead { font-size: 20px; } h2 { font-size: 23px; }
   header img { width: 64px; height: 64px; border-radius: 16px; }
   .stores .store { flex: 1 1 100%; }
-  .shot-todo span { font-size: 20px; }
 }
