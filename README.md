@@ -40,3 +40,4 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 🔩 | `skanvordy-avto/` | [Car Scanwords](https://wobqqq.github.io/skanvordy-avto/en/) |
 | 🐙 | `kosmo-shchupaltsa/` | [Cosmo Tentacles](https://wobqqq.github.io/kosmo-shchupaltsa/en/) |
 | 🐱 | `kotopulta/` | [Catapult Cats](https://wobqqq.github.io/kotopulta/en/) |
+| 🕯️ | `kult/` | [Cult: Global Domination](https://wobqqq.github.io/kult/en/) |
