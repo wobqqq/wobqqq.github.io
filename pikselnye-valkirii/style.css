@@ -1,0 +1,24 @@
+:root { --bg: #1b1f3b; --bg2: #262b52; --card: #2e3463; --ink: #f6efe0; --soft: #b9b4d6; --gold: #ffc83d; --emerald: #2fd27a; --azure: #38b6ff; --crimson: #ff4d6d; --stone: #3a3f6e; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(ellipse at top, var(--bg2), var(--bg) 70%) fixed; color: var(--ink); font: 17px/1.55 system-ui, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 72px; height: 72px; border-radius: 18px; image-rendering: pixelated; box-shadow: 0 0 0 3px var(--gold), 0 6px 0 #0f1226; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0; color: var(--gold); text-shadow: 3px 3px 0 #0f1226; letter-spacing: 0.5px; }
+h2 { color: var(--gold); font-size: 22px; margin: 32px 0 8px; text-shadow: 2px 2px 0 #0f1226; }
+.lead { font-size: 20px; color: #fff; }
+.card { background: var(--card); border: 3px solid var(--stone); border-radius: 12px; padding: 16px 20px; margin: 20px 0; box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.08), 0 6px 0 #0f1226; }
+.card b { color: var(--emerald); }
+ul { padding-left: 20px; }
+li { margin: 8px 0; }
+li::marker { color: var(--gold); }
+a { color: var(--azure); }
+.lang { float: right; font-size: 14px; }
+footer { margin-top: 48px; color: var(--soft); font-size: 14px; }
+.shot { text-align: center; margin: 24px 0; }
+.shot img { display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 20px; image-rendering: pixelated; box-shadow: 0 0 0 4px var(--gold), 0 10px 0 #0f1226, 0 18px 40px rgba(0, 0, 0, 0.45); }
+.store { display: inline-block; background: linear-gradient(var(--gold), #e9a91c); color: #2a1a05; font-weight: 800; text-decoration: none; padding: 12px 24px; border-radius: 10px; box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 4px 0 #8a5a0c; }
+.store:active { transform: translateY(2px); box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 2px 0 #8a5a0c; }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; }
+.stores .store { text-align: center; }
+@media (max-width: 480px) { h1 { font-size: 27px; } .lead { font-size: 18px; } .stores .store { flex: 1 1 100%; } }
