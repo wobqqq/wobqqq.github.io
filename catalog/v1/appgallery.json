@@ -1,11 +1,33 @@
 {
  "format": 1,
  "store": "appgallery",
- "version": 23,
- "issued": "2026-11-26T08:23:16Z",
- "expires": "2027-11-26T08:23:16Z",
+ "version": 24,
+ "issued": "2026-11-27T05:40:40Z",
+ "expires": "2027-11-27T05:40:40Z",
  "mirrors": [],
  "games": [
+  {
+   "slug": "okopnyy-front",
+   "name": "Trench Front",
+   "nameRu": "Окопный фронт",
+   "package": "com.trenchfront.game",
+   "genre": "strategy",
+   "age": 12,
+   "icon": "okopnyy-front-86dafa20.webp",
+   "sha256": "86dafa207dc66966c90f3624322f58e5d1ee46abb29de07bb4df9e4812e7dd10",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119927777"
+  },
+  {
+   "slug": "klass-13",
+   "name": "Classroom 13",
+   "nameRu": "Класс №13",
+   "package": "com.classroom13.game",
+   "genre": "arcade",
+   "age": 12,
+   "icon": "klass-13-4ab82e0f.webp",
+   "sha256": "4ab82e0ff87e4b145916e43c58707872b492ae557f5792ad4697bf5c179b3b19",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119828585"
+  },
   {
    "slug": "epokha-znamen",
    "name": "Epoch of Banners",
@@ -227,17 +249,6 @@
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119428039"
   },
   {
-   "slug": "aviadispetcher",
-   "name": "Air Dispatcher: Landing",
-   "nameRu": "Авиадиспетчер: Посадка",
-   "package": "com.airdispatcher.game",
-   "genre": "arcade",
-   "age": 0,
-   "icon": "aviadispetcher-3c142f53.webp",
-   "sha256": "3c142f530b77c01ba3d9d21927acc6a6c32f476baca027497e960fa344e0c853",
-   "appGalleryUrl": "https://appgallery.huawei.com/app/C119605867"
-  },
-  {
    "slug": "skanvordy",
    "name": "Cozy Scanwords and Word Search",
    "nameRu": "Уютные Сканворды и Филворды",
@@ -258,6 +269,17 @@
    "icon": "skanvordy-sssr-8ba98a70.webp",
    "sha256": "8ba98a7026561d5cf792182787e43f1e75e4c001988eefa3aab69b3d09c50d82",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119605979"
+  },
+  {
+   "slug": "skanvordy-18",
+   "name": "Scanwords for Adults",
+   "nameRu": "Сканворды для взрослых",
+   "package": "com.adultscanwords.game",
+   "genre": "words",
+   "age": 18,
+   "icon": "skanvordy-18-7d28613a.webp",
+   "sha256": "7d28613a9b5b48562f7fcd9674400a8440cf3da6fd9fa66acfda44b0f38fef05",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119606009"
   },
   {
    "slug": "slova-otaku",
@@ -302,6 +324,17 @@
    "icon": "kosmo-shchupaltsa-06dbc7c1.webp",
    "sha256": "06dbc7c13d686c633bda61fcc6e74f2db73b4049f5d0913294fbe9928d074fbf",
    "appGalleryUrl": "https://appgallery.huawei.com/app/C119935443"
+  },
+  {
+   "slug": "aviadispetcher",
+   "name": "Air Dispatcher: Landing",
+   "nameRu": "Авиадиспетчер: Посадка",
+   "package": "com.airdispatcher.game",
+   "genre": "arcade",
+   "age": 0,
+   "icon": "aviadispetcher-3c142f53.webp",
+   "sha256": "3c142f530b77c01ba3d9d21927acc6a6c32f476baca027497e960fa344e0c853",
+   "appGalleryUrl": "https://appgallery.huawei.com/app/C119605867"
   }
  ]
 }
