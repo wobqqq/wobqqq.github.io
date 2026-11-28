@@ -1,0 +1,81 @@
+/* Courier Rush site: sunset orange and thermal-backpack teal, like the game's icon. */
+:root {
+  --bg: #fff1e0; --card: #fffaf2; --ink: #2b2140; --soft: #6e5a52; --accent: #c4471a;
+  --sun1: #ff6a3d; --sun2: #ff9a3c; --sun3: #ffcf6b; --teal: #13948f; --teal-dark: #0c6e6a; --cream: #fff6e3;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink); font: 17px/1.55 "Rubik", system-ui, sans-serif;
+  background: linear-gradient(180deg, #ffd9b8 0, var(--bg) 420px, var(--bg) 100%);
+  background-color: var(--bg);
+}
+main { max-width: 760px; margin: 0 auto; padding: 28px 16px 64px; }
+a { color: var(--accent); }
+.lang { float: right; font-size: 14px; font-weight: 600; background: var(--cream); padding: 4px 12px; border-radius: 999px; text-decoration: none; box-shadow: 0 2px 0 #f0c79a; }
+
+/* Hero: the sunburst of the icon behind the name. */
+.hero {
+  clear: both; position: relative; overflow: hidden; border-radius: 28px; padding: 28px 24px 26px; margin: 8px 0 24px;
+  background: radial-gradient(circle at 22% 40%, rgba(255,226,140,.9) 0, rgba(255,226,140,0) 46%),
+              repeating-conic-gradient(from 0deg at 22% 40%, rgba(255,255,255,.13) 0 9deg, rgba(255,255,255,0) 9deg 18deg),
+              linear-gradient(160deg, var(--sun1) 0%, var(--sun2) 55%, var(--sun3) 100%);
+  box-shadow: 0 6px 0 #d9551f, 0 14px 30px rgba(196,71,26,.25);
+  color: #fff;
+}
+.hero header { display: flex; align-items: center; gap: 18px; }
+.hero header img { width: 104px; height: 104px; border-radius: 26px; border: 4px solid #fff; box-shadow: 0 6px 0 rgba(43,33,64,.25); flex: none; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0; }
+.hero h1 { color: #fff; text-shadow: 0 3px 0 #b8421a, 0 0 18px rgba(120,40,10,.35); }
+.tagline { margin: 16px 0 0; font-size: 19px; font-weight: 700; color: #3b1606; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; }
+.badges li { margin: 0; background: rgba(43,33,64,.82); color: var(--sun3); font-size: 14px; font-weight: 700; padding: 4px 12px; border-radius: 999px; }
+
+h2 { color: var(--accent); font-size: 23px; margin: 34px 0 10px; }
+.lead { font-size: 20px; }
+.card { background: var(--card); border-radius: 22px; padding: 16px 20px; margin: 20px 0; box-shadow: 0 5px 0 #f0c79a; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+
+/* Swipe controls as four keys. */
+.controls { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 18px 0; padding: 0; list-style: none; }
+.controls li { margin: 0; text-align: center; background: var(--teal); color: #fff; border-radius: 16px; padding: 10px 6px; font-size: 14px; font-weight: 600; box-shadow: 0 4px 0 var(--teal-dark); }
+.controls b { display: block; font-size: 26px; line-height: 1.1; color: var(--sun3); }
+
+/* Feature tiles. */
+.features { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin: 18px 0; padding: 0; list-style: none; }
+.features li { margin: 0; background: var(--card); border-radius: 20px; padding: 14px 16px; box-shadow: 0 4px 0 #f0c79a; border-top: 5px solid var(--sun2); }
+.features li:nth-child(3n+2) { border-top-color: var(--teal); }
+.features li:nth-child(3n) { border-top-color: #e9546b; }
+.features .ico { font-size: 26px; line-height: 1; display: block; margin-bottom: 6px; }
+.features li:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
+.features b { display: block; margin-bottom: 2px; }
+
+.districts { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; margin: 12px 0 0; }
+.districts li { margin: 0; background: #ffe2c4; color: #7a3412; font-size: 14px; font-weight: 600; padding: 4px 12px; border-radius: 999px; }
+
+.note { background: linear-gradient(135deg, #e3f6f3, #fff6e3); border-left: 6px solid var(--teal); border-radius: 16px; padding: 12px 16px; }
+
+/* Store buttons, side by side. */
+.store { display: inline-block; background: var(--ink); color: var(--sun3); font-weight: 700; text-decoration: none; padding: 13px 26px; border-radius: 999px; box-shadow: 0 4px 0 #120c20; }
+.store.ag { background: var(--teal); color: #fff; box-shadow: 0 4px 0 var(--teal-dark); }
+.store:hover { transform: translateY(-1px); }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; }
+.stores .store { text-align: center; }
+
+/* The screenshot, always centred (standards/10 §10.4). */
+.shot { text-align: center; margin: 24px 0; }
+.shot img { display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 22px; border: 5px solid #fff; box-shadow: 0 8px 0 #f0c79a, 0 16px 34px rgba(196,71,26,.28); }
+
+footer { margin-top: 48px; color: var(--soft); font-size: 14px; border-top: 2px dashed #f0c79a; padding-top: 16px; }
+
+/* Privacy policy pages. */
+.policy h1 { font-size: 28px; }
+.policy h2 { font-size: 20px; margin-top: 26px; }
+
+@media (max-width: 480px) {
+  h1 { font-size: 26px; } .policy h1 { font-size: 23px; }
+  .lead { font-size: 18px; } .tagline { font-size: 17px; }
+  .hero { padding: 20px 16px; } .hero header img { width: 76px; height: 76px; border-radius: 20px; }
+  .controls { grid-template-columns: repeat(2, 1fr); }
+  .stores .store { flex: 1 1 100%; }
+}
