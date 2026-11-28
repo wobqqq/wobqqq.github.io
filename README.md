@@ -41,3 +41,4 @@ Each game folder is a copy of the `website/` folder of the game's own (private) 
 | 🐙 | `kosmo-shchupaltsa/` | [Cosmo Tentacles](https://wobqqq.github.io/kosmo-shchupaltsa/en/) |
 | 🐱 | `kotopulta/` | [Catapult Cats](https://wobqqq.github.io/kotopulta/en/) |
 | 🕯️ | `kult/` | [Cult: Global Domination](https://wobqqq.github.io/kult/en/) |
+| 🛵 | `kurer-rush/` | [Courier Rush: Delivery Runner](https://wobqqq.github.io/kurer-rush/en/) |
